@@ -4,15 +4,18 @@
 
 <a href="https://www.buymeacoffee.com/tildemark" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
-## 🔭 I’m currently working on 
+
+# 🔭 I’m currently working on 
 - [QRyptshare - QR Code Generator](https://github.com/tildemark/QRyptshare)
 - [TireMan - Tire Inventory DB](#)
 
-## 🌱 I’m currently learning on
+
+# 🌱 I’m currently learning on
 [![React](https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB)](#)
 [![Next.js](https://img.shields.io/badge/Next.js-black?logo=next.js&logoColor=white)](#)
 
-## 📫 How to reach me: 
+
+# 📫 How to reach me: 
 📧 <a href='&#109;&#97;ilt&#111;&#58;de&#37;&#55;&#50;f&#64;%7&#51;&#97;n&#99;%6&#56;&#101;z%2&#69;%&#55;0%&#54;8'>&#100;erf&#64;sanchez&#46;p&#104;</a>
 
 [![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://www.facebook.com/tildemark)
