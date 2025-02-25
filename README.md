@@ -5,18 +5,12 @@
 <a href="https://www.buymeacoffee.com/tildemark" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a>
 
 ## 🔭 I’m currently working on 
-- [QR Code Generator](https://github.com/tildemark/QRyptshare)
-- [Tire Inventory DB](#)
+- [QRyptshare - QR Code Generator](https://github.com/tildemark/QRyptshare)
+- [TireMan - Tire Inventory DB](#)
 
 ## 🌱 I’m currently learning on
-- [![React](https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB)](#)
-- [![Next.js](https://img.shields.io/badge/Next.js-black?logo=next.js&logoColor=white)](#)
-
-## 👯 I’m looking to collaborate on 
-- [QR Code Generator](https://github.com/tildemark/QRyptshare)
-
-## 🤔 I’m looking for help with 
-- [QR Code Generator](https://github.com/tildemark/QRyptshare)
+[![React](https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB)](#)
+[![Next.js](https://img.shields.io/badge/Next.js-black?logo=next.js&logoColor=white)](#)
 
 ## 💬 Ask me about 
 - ERP
