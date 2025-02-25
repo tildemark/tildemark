@@ -9,8 +9,8 @@
 - [Tire Inventory DB](#)
 
 ## 🌱 I’m currently learning on
-- React
-- Next.js
+- [![React](https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB)](#)
+- [![Next.js](https://img.shields.io/badge/Next.js-black?logo=next.js&logoColor=white)](#)
 
 ## 👯 I’m looking to collaborate on 
 - [QR Code Generator](https://github.com/tildemark/QRyptshare)
@@ -24,6 +24,12 @@
 - CCTV
 - IoT
 
-## 📫 How to reach me: <a href='mailto&#58;der%&#54;&#54;&#64;&#115;a%6E%&#54;3&#104;e%&#55;A&#37;2Eph'>derf&#64;&#115;&#97;n&#99;hez&#46;&#112;&#104;</a>
+## 📫 How to reach me: 
+[![Gmail](https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white)](#) <a href='&#109;&#97;ilt&#111;&#58;de&#37;&#55;&#50;f&#64;%7&#51;&#97;n&#99;%6&#56;&#101;z%2&#69;%&#55;0%&#54;8'>&#100;erf&#64;sanchez&#46;p&#104;</a>
+
+[![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://www.facebook.com/tildemark)
+[![LinkedIn](https://custom-icon-badges.demolab.com/badge/LinkedIn-0A66C2?logo=linkedin-white&logoColor=fff)](https://www.linkedin.com/in/tildemark)
+[![Youtube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://www.youtube.com/c/tildemark)
+
 
 
