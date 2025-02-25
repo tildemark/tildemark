@@ -12,12 +12,6 @@
 [![React](https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB)](#)
 [![Next.js](https://img.shields.io/badge/Next.js-black?logo=next.js&logoColor=white)](#)
 
-## 💬 Ask me about 
-- ERP
-- Solar Renewable Energy
-- CCTV
-- IoT
-
 ## 📫 How to reach me: 
 📧 <a href='&#109;&#97;ilt&#111;&#58;de&#37;&#55;&#50;f&#64;%7&#51;&#97;n&#99;%6&#56;&#101;z%2&#69;%&#55;0%&#54;8'>&#100;erf&#64;sanchez&#46;p&#104;</a>
 
