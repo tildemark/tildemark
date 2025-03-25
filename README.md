@@ -6,9 +6,10 @@
 
 
 # 🔭 I’m currently working on 
+- [ABCDE - All Business Centralized Data ERP System ](https://github.com/tildemark/ABCDE)
 - [QRyptshare - QR Code Generator](https://github.com/tildemark/QRyptshare)
 - [TireMan - Tire Inventory DB](#)
-- [ABCDE - All Business Centralized Data ERP System ](#)
+
 
 
 # 🌱 I’m currently learning on
