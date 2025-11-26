@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfredo Sanchez Jr. | Technologist</title>
+    <meta name="description" content="Head of IT, Data Protection Officer, and Hardware Hacker building systems for land and sea.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        /* Subtle animation for the links */
+        .link-card { transition: transform 0.2s, border-color 0.2s; }
+        .link-card:hover { transform: translateY(-2px); }
+    </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        maritime: '#0f172a', // Slate 900
+                        accent: '#38bdf8',   // Sky 400
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-maritime text-slate-300 min-h-screen flex flex-col items-center justify-center p-6">
+
+    <main class="w-full max-w-lg mx-auto text-center space-y-8">
+
+        <header class="space-y-4 animate-fade-in">
+            <div class="relative inline-block">
+                <img src="https://github.com/tildemark.png" 
+                     alt="Alfredo Sanchez Jr." 
+                     class="w-32 h-32 rounded-full border-4 border-slate-700 shadow-xl mx-auto grayscale hover:grayscale-0 transition-all duration-500">
+                <span class="absolute bottom-2 right-2 w-4 h-4 bg-green-500 border-2 border-maritime rounded-full"></span>
+            </div>
+
+            <div>
+                <h1 class="text-3xl md:text-4xl font-bold text-white tracking-tight">Alfredo Sanchez Jr.</h1>
+                <p class="text-accent font-medium mt-2 text-lg">Building systems for land and sea.</p>
+            </div>
+
+            <div class="text-slate-400 text-sm md:text-base leading-relaxed max-w-md mx-auto">
+                <p>
+                    <strong>Head of IT</strong> & <strong>Data Protection Officer (DPO)</strong> <br/>
+                    Avega Bros Integrated Shipping Corp.
+                </p>
+                <p class="mt-3">
+                    I bridge the gap between enterprise software and rugged hardware. My work spans ERP development, data privacy compliance, and shipboard IoT integration.
+                </p>
+                <p class="mt-3 italic text-slate-500 text-xs">
+                    (And when I'm onboard, I swap the laptop for a camera to photograph the fleet.)
+                </p>
+            </div>
+        </header>
+
+        <nav class="flex flex-col gap-4 w-full">
+            
+            <a href="https://resume.sanchez.ph" class="link-card group flex items-center justify-between bg-slate-800/50 hover:bg-slate-800 border border-slate-700 hover:border-accent px-5 py-4 rounded-xl text-left no-underline">
+                <div class="flex items-center gap-4">
+                    <div class="bg-slate-700 text-white p-2 rounded-lg w-10 h-10 flex items-center justify-center group-hover:bg-accent group-hover:text-maritime transition-colors">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-white">Professional Resume</h3>
+                        <p class="text-xs text-slate-400">IT Management, DPO, & Skills</p>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-right text-slate-600 group-hover:text-white"></i>
+            </a>
+
+            <a href="https://blog.sanchez.ph" class="link-card group flex items-center justify-between bg-slate-800/50 hover:bg-slate-800 border border-slate-700 hover:border-accent px-5 py-4 rounded-xl text-left no-underline">
+                <div class="flex items-center gap-4">
+                    <div class="bg-slate-700 text-white p-2 rounded-lg w-10 h-10 flex items-center justify-center group-hover:bg-accent group-hover:text-maritime transition-colors">
+                        <i class="fas fa-pen-to-square"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-white">Syntax</h3>
+                        <p class="text-xs text-slate-400"><b>S</b>imple <b>Y</b>et <b>N</b>ecessary <b>T</b>ips <b>A</b>nd e<b>X</b>periments</p>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-right text-slate-600 group-hover:text-white"></i>
+            </a>
+
+            <a href="https://github.com/tildemark" class="link-card group flex items-center justify-between bg-slate-800/50 hover:bg-slate-800 border border-slate-700 hover:border-accent px-5 py-4 rounded-xl text-left no-underline">
+                <div class="flex items-center gap-4">
+                    <div class="bg-slate-700 text-white p-2 rounded-lg w-10 h-10 flex items-center justify-center group-hover:bg-accent group-hover:text-maritime transition-colors">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-white">The Code</h3>
+                        <p class="text-xs text-slate-400">Open Source & ERP Skeletons</p>
+                    </div>
+                </div>
+                <i class="fas fa-chevron-right text-slate-600 group-hover:text-white"></i>
+            </a>
+
+        </nav>
+
+        <footer class="pt-6 border-t border-slate-800 w-full">
+            <div class="flex justify-center gap-8 text-2xl text-slate-500 mb-4">
+                <a href="https://linkedin.com/in/tildemark" class="hover:text-white hover:scale-110 transition-transform" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:derf@sanchez.ph" class="hover:text-white hover:scale-110 transition-transform" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://facebook.com/tildemark" class="hover:text-white hover:scale-110 transition-transform" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            </div>
+            <p class="text-xs text-slate-600">© 2025 Alfredo Sanchez Jr. | Hosted on GitHub Pages</p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
