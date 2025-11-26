@@ -1,44 +1,57 @@
-# Welcome to my Github profile page!
+<div align="center">
+  <img src="https://github.com/tildemark.png" width="120" style="border-radius: 50%; border: 3px solid #38bdf8;" />
+  
+  # Alfredo Sanchez Jr.
+  ### Head of IT & Data Protection
 
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&pause=1000&width=450&lines=Hi+there+%F0%9F%91%8B+Feel+free+to+look+around;or+buy+me+coffee!+%E2%98%95)](https://git.io/typing-svg)
+  <p>
+    <b>Building systems for land and sea.</b><br>
+    Bridging enterprise ERP software with shipboard IoT hardware.
+  </p>
 
-<a href="https://www.buymeacoffee.com/tildemark" target="_blank"><img src="https://img.shields.io/badge/Buy%20Me%20a%20Coffee-ffdd00?&logo=buy-me-a-coffee&logoColor=black" alt="Buy Me A Coffee"></a>
+  <br>
 
+  <a href="https://sanchez.ph">
+    <img src="https://img.shields.io/badge/🌐_Hub-sanchez.ph-222?style=for-the-badge" height="30" />
+  </a>
+  <a href="https://resume.sanchez.ph">
+    <img src="https://img.shields.io/badge/📄_Resume-Head_of_IT-38bdf8?style=for-the-badge&labelColor=1e293b" height="30" />
+  </a>
+  <a href="https://blog.sanchez.ph">
+    <img src="https://img.shields.io/badge/📸_Blog-Syntax_&_Shutterspeed-fbbf24?style=for-the-badge&labelColor=1e293b" height="30" />
+  </a>
+  <a href="https://linkedin.com/in/tildemark">
+    <img src="https://img.shields.io/badge/in-LinkedIn-0077b5?style=for-the-badge" height="30" />
+  </a>
 
-# 🔭 I’m currently working on 
-- [CodeIgniter 4 DevContainer Skeleton](https://github.com/tildemark/skeleton-ci)
-- [ABCDE - All Business Centralized Data ERP System ](https://github.com/tildemark/ABCDE)
-- [QRyptshare - QR Code Generator](https://github.com/tildemark/QRyptshare)
-- [TireMan - Tire Inventory DB](#)
+</div>
 
+<br>
+<hr>
 
-# 🌱 I’m currently learning on
-[![React](https://img.shields.io/badge/React-%2320232a.svg?logo=react&logoColor=%2361DAFB)](#)
-[![ReactNative](https://img.shields.io/badge/-React_Native-05122A?style=flat&logo=react)](#)
-[![Expo](https://img.shields.io/badge/Expo-000020?logo=expo&logoColor=fff)](#)
-[![Next.js](https://img.shields.io/badge/Next.js-black?logo=next.js&logoColor=white)](#)
-[![Express.js](https://img.shields.io/badge/Express.js-%23404d59.svg?logo=express&logoColor=%2361DAFB)](#)
-[![NodeJS](https://img.shields.io/badge/Node.js-6DA55F?logo=node.js&logoColor=white)](#)
-[![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=fff)](#)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?logo=typescript&logoColor=fff)](#)
-[![TailwindCSS](https://img.shields.io/badge/Tailwind%20CSS-%2338B2AC.svg?logo=tailwind-css&logoColor=white)](#)
-[![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=fff)](#)
-[![Figma](https://img.shields.io/badge/Figma-F24E1E?logo=figma&logoColor=white)](#)
-[![Firestore](https://img.shields.io/badge/Firestore-yellow?logo=firebase)](#)
-[![npm](https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=fff)](#)
-[![C](https://img.shields.io/badge/C-00599C?logo=c&logoColor=white)](#)
-[![C++](https://img.shields.io/badge/C++-%2300599C.svg?logo=c%2B%2B&logoColor=white)](#)
-[![Markdown](https://img.shields.io/badge/Markdown-%23000000.svg?logo=markdown&logoColor=white)](#)
+### 👨‍💻 The Executive Profile
+I am the **Head of IT** at **Avega Bros Integrated Shipping**, where I manage digital transformation for a fleet of **50+ vessels**. My work isn't just code—it's infrastructure, compliance, and hardware integration in rugged environments.
 
+- 🔭 **Currently Building:** [STARS (Ship Tracking And Reporting System)](https://stars.avegabros.org) - A Starlink-enabled fleet monitoring platform.
+- 🌱 **Learning:** Advanced LoRaWAN implementations for inter-ship telemetry.
+- 📸 **Hobby:** When I'm onboard for inspections, I document the [maritime industry through photography](https://blog.sanchez.ph).
 
+<br>
 
-# 📫 How to reach me: 
-📧 <a href='&#109;&#97;ilt&#111;&#58;de&#37;&#55;&#50;f&#64;%7&#51;&#97;n&#99;%6&#56;&#101;z%2&#69;%&#55;0%&#54;8'>&#100;erf&#64;sanchez&#46;p&#104;</a>
+### 🛠️ Technical Architecture
+I don't just stack bricks; I design buildings. Here is the toolkit I use to solve operational problems.
 
-[![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white)](https://www.facebook.com/tildemark)
-[![LinkedIn](https://custom-icon-badges.demolab.com/badge/LinkedIn-0A66C2?logo=linkedin-white&logoColor=fff)](https://www.linkedin.com/in/tildemark)
-[![Youtube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://www.youtube.com/c/tildemark)
+| Domain | Technologies |
+| :--- | :--- |
+| **🚢 Maritime IoT** | `Starlink Enterprise` `ESP32` `NMEA 0183/2000` `AIS` `GPS Telemetry` `Solar Arrays` |
+| **💻 Backend & ERP** | `PHP (CodeIgniter 4)` `Python` `PostgreSQL` `MySQL` `Redis` `Docker` |
+| **🌐 Frontend** | `React` `Next.js` `Tailwind CSS` `LeafletJS` |
+| **🛡️ Ops & Security** | `OCI (Oracle Cloud)` `AWS` `Linux Admin` `Data Privacy (DPO)` |
 
+<br>
 
-
-
+### 📊 GitHub Stats
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=tildemark&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=38bdf8&icon_color=fbbf24" height="150" alt="stats graph" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tildemark&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=38bdf8" height="150" alt="languages graph" />
+</div>
