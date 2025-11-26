@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://avatars.githubusercontent.com/u/tildemark?v=4" width="120" style="border-radius: 50%; border: 3px solid #38bdf8;" />
+  <img src="https://github.com/tildemark.png" width="120" style="border-radius: 50%; border: 3px solid #38bdf8;" />
   
   # Alfredo Sanchez Jr.
   ### Head of IT & Data Protection
@@ -32,9 +32,9 @@
 ### 👨‍💻 The Executive Profile
 I am the **Head of IT** at **Avega Bros Integrated Shipping**, where I manage digital transformation for a fleet of **50+ vessels**. My work isn't just code—it's infrastructure, compliance, and hardware integration in rugged environments.
 
-- 🔭 **Currently Building:** [STARS (**S**hip **T**racking **A**nd **R**eporting **S**ystem)](https://stars.avegabros.org) - A Starlink-enabled fleet monitoring platform.
+- 🔭 **Currently Building:** [STARS (Ship Tracking And Reporting System)](https://stars.avegabros.org) - A Starlink-enabled fleet monitoring platform.
 - 🌱 **Learning:** Advanced LoRaWAN implementations for inter-ship telemetry.
-- 📸 **Hobby:** When I'm onboard for inspections, I document the [maritime industry through photography](https://blog.sanchez.ph).
+- 📸 **Hobby:** And when I'm onboard, I swap the laptop for a camera to [photograph the fleet](https://blog.sanchez.ph).
 
 <br>
 
@@ -51,14 +51,17 @@ I don't just stack bricks; I design buildings. Here is the toolkit I use to solv
 <br>
 
 ### 📊 Operational Metrics
+
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=tildemark&show_icons=true&theme=dark&hide_border=true&bg_color=0d1117&title_color=38bdf8&icon_color=fbbf24" height="150" alt="stats graph" />
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=tildemark&theme=github_dark" alt="profile details" />
   
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=tildemark&layout=compact&theme=dark&hide_border=true&bg_color=0d1117&title_color=38bdf8" height="150" alt="languages graph" />
+  <br><br>
+
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=tildemark&theme=dark&hide_border=true&background=0d1117&ring=fbbf24&currStreakLabel=38bdf8" height="150" alt="streak graph" />
   
   <br>
 
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=tildemark&theme=dark&hide_border=true&background=0d1117&ring=fbbf24&currStreakLabel=38bdf8" height="150" alt="streak graph" />
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=tildemark&theme=github_dark&utcOffset=8" alt="productive time" />
 </div>
 
 <br>
