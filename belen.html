@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belen Info Board</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=EB+Garamond:ital,wght@0,400;0,600;1,400&display=swap');
+
+        body {
+            background-color: #555;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 20px;
+            font-family: 'EB Garamond', serif;
+        }
+
+        /* Simulates Short Bond Paper Ratio */
+        .page {
+            background-color: transparent;
+            width: 8.5in;
+            height: 11in;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: relative;
+            box-sizing: border-box;
+        }
+
+        /* The Wooden Rollers */
+        .roller-top, .roller-bottom {
+            width: 90%;
+            height: 40px;
+            background: linear-gradient(to bottom, #5d4037, #8d6e63, #3e2723);
+            border-radius: 5px;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.5);
+            z-index: 2;
+            position: relative;
+        }
+
+        /* The Parchment Paper */
+        .parchment {
+            width: 80%; /* Slightly narrower than rollers */
+            background-color: #fcf5e5;
+            background-image: repeating-linear-gradient(to right, #fcf5e5 0, #fcf5e5 10px, #f4e4bc 12px);
+            padding: 40px 50px;
+            color: #3e2723;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            margin-top: -15px; /* Tucks under the roller */
+            margin-bottom: -15px;
+            text-align: center;
+            border-left: 1px solid #d7ccc8;
+            border-right: 1px solid #d7ccc8;
+            flex-grow: 1; /* Fills the space */
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 28pt;
+            margin-bottom: 5px;
+            margin-top: 10px;
+            text-transform: uppercase;
+            color: #5d4037;
+            text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+            line-height: 1.1;
+        }
+
+        h2 {
+            font-family: 'EB Garamond', serif;
+            font-size: 14pt;
+            font-style: italic;
+            font-weight: normal;
+            margin-bottom: 25px;
+            color: #6d4c41;
+            border-bottom: 2px double #8d6e63;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        p.intro {
+            font-size: 14pt;
+            line-height: 1.4;
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+
+        .materials-box {
+            background-color: rgba(255,255,255,0.4);
+            border: 2px solid #8d6e63;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 20px 0;
+            text-align: left;
+        }
+
+        .materials-box h3 {
+            margin-top: 0;
+            font-family: 'Cinzel', serif;
+            font-size: 14pt;
+            text-align: center;
+            border-bottom: 1px solid #8d6e63;
+            padding-bottom: 5px;
+        }
+
+        ul {
+            list-style-type: none; /* Remove default bullets */
+            padding-left: 0;
+            margin: 0;
+        }
+
+        li {
+            font-size: 12pt;
+            margin-bottom: 8px;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        /* Custom bullet points */
+        li::before {
+            content: "✦";
+            position: absolute;
+            left: 0;
+            color: #5d4037;
+        }
+
+        .quote {
+            font-style: italic;
+            font-size: 16pt;
+            font-weight: bold;
+            margin-top: 30px;
+            color: #3e2723;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 10pt;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        /* Print Settings to ensure background colors print */
+        @media print {
+            body { -webkit-print-color-adjust: exact; background-color: white; }
+            .page { width: 100%; height: 100%; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page">
+        <div class="roller-top"></div>
+
+        <div class="parchment">
+            <h1>Recycled Wonders<br>of Piaping Puti</h1>
+            <h2>Turning Waste into Wonders: Creativity Meets Cleanliness</h2>
+
+            <p class="intro">
+                Standing beneath the banner of <strong>Gloria in Excelsis Deo</strong>, this Belen represents our community's resourcefulness. We transformed common household waste into a sacred scene, proving that beauty can be found in sustainability.
+            </p>
+
+            <div class="materials-box">
+                <h3>From Trash to Treasure</h3>
+                <ul>
+                    <li><strong>Egg Trays:</strong> Repurposed to create the textured "stone" backdrop and main signage.</li>
+                    <li><strong>Eco Bags:</strong> Styled to create the vibrant robes of the Holy Family.</li>
+                    <li><strong>Coconut Husks & Leaves:</strong> Fallen nature gathered to thatch the roof.</li>
+                    <li><strong>Cut Wood Branches:</strong> Scavenged wood used for the rustic pillars.</li>
+                    <li><strong>Live Plants:</strong> Integrated to symbolize life, growth, and cleanliness.</li>
+                </ul>
+            </div>
+
+            <p class="quote">
+                "Just as the manger was a humble beginning, these recycled materials remind us that great things often start from the simplest parts."
+            </p>
+
+            <div class="footer">
+                Entry by: Block [INSERT BLOCK #] • Piaping Puti, Macabalan
+            </div>
+        </div>
+
+        <div class="roller-bottom"></div>
+    </div>
+
+</body>
+</html>
