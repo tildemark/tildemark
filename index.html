@@ -113,17 +113,73 @@
 
         </nav>
 
-        <section class="w-full text-left pt-6 border-t border-slate-800">
+        <section class="w-full text-left pt-6 border-t border-slate-800" id="experiments-section">
             <h2 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
                 <span class="text-accent"><i class="fas fa-flask"></i></span> Lab / Experiments
             </h2>
             
-            <div class="grid grid-cols-1 gap-4">
-                <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4">
+            <div class="flex flex-wrap gap-2 mb-4">
+                <button onclick="filterSection('experiments', 'all')" class="tab-btn active px-3 py-1 text-xs font-bold rounded-full border border-slate-700 bg-accent text-maritime transition-all" data-filter="all">All</button>
+                <button onclick="filterSection('experiments', 'maritime')" class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all" data-filter="maritime">Maritime</button>
+                <button onclick="filterSection('experiments', 'iot')" class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all" data-filter="iot">IoT</button>
+                <button onclick="filterSection('experiments', 'erp')" class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all" data-filter="erp">ERP</button>
+                <button onclick="filterSection('experiments', 'games')" class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all" data-filter="games">Games</button>
+            </div>
+
+            <div class="grid grid-cols-1 gap-4" id="experiments-grid">
+                
+                <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4" data-category="erp">
                     <div class="flex justify-between items-start mb-2">
-                        <h3 class="font-bold text-white text-sm">Barangay API</h3>
+                        <div class="flex flex-col">
+                            <h3 class="font-bold text-white text-sm">EquiYield</h3>
+                            <span class="text-[10px] text-accent font-mono uppercase tracking-wider mt-0.5">ERP &bull; Finance</span>
+                        </div>
                         <div class="flex gap-2">
-                            <a href="#" class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-accent hover:text-maritime transition-colors font-semibold">Demo</a>
+                            <a href="#" class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Full-stack cooperative savings and loan management system. Built with Next.js & Postgres.
+                    </p>
+                </div>
+
+                <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4" data-category="maritime iot">
+                    <div class="flex justify-between items-start mb-2">
+                        <div class="flex flex-col">
+                            <h3 class="font-bold text-white text-sm">Shipboard IoT</h3>
+                            <span class="text-[10px] text-accent font-mono uppercase tracking-wider mt-0.5">Maritime &bull; IoT</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <a href="#" class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Monitoring vessel telemetry over high-latency satellite connections using efficient protocols.
+                    </p>
+                </div>
+
+                <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4" data-category="games">
+                    <div class="flex justify-between items-start mb-2">
+                        <div class="flex flex-col">
+                            <h3 class="font-bold text-white text-sm">StreetCred</h3>
+                            <span class="text-[10px] text-accent font-mono uppercase tracking-wider mt-0.5">Games &bull; Ranking</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <a href="#" class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Elo ranking system for casual office competitions (Darts, Chess, Table Tennis).
+                    </p>
+                </div>
+
+                <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4" data-category="civic">
+                    <div class="flex justify-between items-start mb-2">
+                        <div class="flex flex-col">
+                            <h3 class="font-bold text-white text-sm">Barangay API</h3>
+                            <span class="text-[10px] text-accent font-mono uppercase tracking-wider mt-0.5">Civic Tech</span>
+                        </div>
+                        <div class="flex gap-2">
                             <a href="#" class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
                         </div>
                     </div>
@@ -132,17 +188,21 @@
                     </p>
                 </div>
 
-                <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4">
+                <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4" data-category="maritime iot">
                     <div class="flex justify-between items-start mb-2">
-                        <h3 class="font-bold text-white text-sm">Shipboard IoT</h3>
+                        <div class="flex flex-col">
+                            <h3 class="font-bold text-white text-sm">Antenna Tracker</h3>
+                            <span class="text-[10px] text-accent font-mono uppercase tracking-wider mt-0.5">Hardware &bull; RF</span>
+                        </div>
                         <div class="flex gap-2">
-                            <a href="#" class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-accent hover:text-maritime transition-colors font-semibold">View</a>
+                            <a href="#" class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
                         </div>
                     </div>
                     <p class="text-xs text-slate-400 leading-relaxed">
-                        Monitoring vessel telemetry over high-latency satellite connections.
+                        1-axis antenna tracker logic for maintaining P2P ship-to-shore links.
                     </p>
                 </div>
+
             </div>
         </section>
 
@@ -166,16 +226,16 @@
             </a>
         </section>
 
-        <section class="w-full text-left pt-6 border-t border-slate-800">
+        <section class="w-full text-left pt-6 border-t border-slate-800" id="toolbox-section">
             <h2 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
                 <span class="text-accent"><i class="fas fa-toolbox"></i></span> The Toolbox
             </h2>
 
-            <div class="flex flex-wrap gap-2 mb-6" id="toolbox-tabs">
-                <button onclick="filterTools('all')" class="tab-btn px-4 py-1.5 text-xs font-bold rounded-full border border-slate-700 bg-accent text-maritime transition-all" data-filter="all">All</button>
-                <button onclick="filterTools('dev')" class="tab-btn px-4 py-1.5 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all" data-filter="dev">Dev</button>
-                <button onclick="filterTools('ops')" class="tab-btn px-4 py-1.5 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all" data-filter="ops">Office & Ops</button>
-                <button onclick="filterTools('creative')" class="tab-btn px-4 py-1.5 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all" data-filter="creative">Creative</button>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <button onclick="filterSection('toolbox', 'all')" class="tab-btn active px-3 py-1 text-xs font-bold rounded-full border border-slate-700 bg-accent text-maritime transition-all" data-filter="all">All</button>
+                <button onclick="filterSection('toolbox', 'dev')" class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all" data-filter="dev">Dev</button>
+                <button onclick="filterSection('toolbox', 'ops')" class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all" data-filter="ops">Ops</button>
+                <button onclick="filterSection('toolbox', 'creative')" class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all" data-filter="creative">Creative</button>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3" id="toolbox-grid">
@@ -200,7 +260,7 @@
                     <img src="https://cdn.simpleicons.org/mermaid/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Mermaid">
                     <div>
                         <span class="block font-bold text-slate-200 text-sm mb-0.5">Mermaid.js</span>
-                        <span class="block text-xs text-slate-500">Flowcharts via Markdown. Dragging boxes is pain.</span>
+                        <span class="block text-xs text-slate-500">Flowcharts via Markdown.</span>
                     </div>
                 </a>
 
@@ -208,7 +268,7 @@
                     <img src="https://cdn.simpleicons.org/plantuml/38bdf8" class="w-8 h-8 flex-shrink-0" alt="PlantUML">
                     <div>
                         <span class="block font-bold text-slate-200 text-sm mb-0.5">PlantUML</span>
-                        <span class="block text-xs text-slate-500">Architecture as code. Ugly, but honest.</span>
+                        <span class="block text-xs text-slate-500">Architecture as code.</span>
                     </div>
                 </a>
 
@@ -224,7 +284,7 @@
                     <div class="w-8 h-8 flex items-center justify-center text-accent text-2xl"><i class="fas fa-file-pdf"></i></div>
                     <div>
                         <span class="block font-bold text-slate-200 text-sm mb-0.5">PDF24</span>
-                        <span class="block text-xs text-slate-500">Ugly UI, but it's free and works every time.</span>
+                        <span class="block text-xs text-slate-500">Ugly UI, but it's free and works.</span>
                     </div>
                 </a>
 
@@ -232,7 +292,7 @@
                     <img src="https://cdn.simpleicons.org/notion/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Notion">
                     <div>
                         <span class="block font-bold text-slate-200 text-sm mb-0.5">Notion</span>
-                        <span class="block text-xs text-slate-500">Where my brain dumps its cache.</span>
+                        <span class="block text-xs text-slate-500">Brain cache.</span>
                     </div>
                 </div>
 
@@ -240,7 +300,7 @@
                     <img src="https://cdn.simpleicons.org/immich/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Immich">
                     <div>
                         <span class="block font-bold text-slate-200 text-sm mb-0.5">Immich</span>
-                        <span class="block text-xs text-slate-500">Google Photos, but on my own hardware.</span>
+                        <span class="block text-xs text-slate-500">Self-hosted photos.</span>
                     </div>
                 </div>
 
@@ -248,7 +308,7 @@
                     <img src="https://cdn.simpleicons.org/adobelightroom/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Lightroom">
                     <div>
                         <span class="block font-bold text-slate-200 text-sm mb-0.5">Lightroom</span>
-                        <span class="block text-xs text-slate-500">Color grading reality for the blog.</span>
+                        <span class="block text-xs text-slate-500">Color grading reality.</span>
                     </div>
                 </div>
 
@@ -267,36 +327,43 @@
     </main>
 
     <script>
-        function filterTools(category) {
-            // 1. Reset all buttons
-            const buttons = document.querySelectorAll('.tab-btn');
+        function filterSection(sectionId, category) {
+            const section = document.getElementById(sectionId + '-section');
+            if (!section) return;
+
+            // 1. Handle Buttons within this section
+            const buttons = section.querySelectorAll('.tab-btn');
             buttons.forEach(btn => {
-                // Remove active classes
-                btn.classList.remove('bg-accent', 'text-maritime');
-                // Add inactive classes
-                btn.classList.add('text-slate-400', 'hover:text-white');
+                if (btn.getAttribute('data-filter') === category) {
+                    btn.classList.remove('text-slate-400', 'hover:text-white');
+                    btn.classList.add('bg-accent', 'text-maritime');
+                } else {
+                    btn.classList.add('text-slate-400', 'hover:text-white');
+                    btn.classList.remove('bg-accent', 'text-maritime');
+                }
             });
 
-            // 2. Highlight clicked button
-            const activeBtn = document.querySelector(`button[data-filter="${category}"]`);
-            if (activeBtn) {
-                activeBtn.classList.remove('text-slate-400', 'hover:text-white');
-                activeBtn.classList.add('bg-accent', 'text-maritime');
-            }
-
-            // 3. Filter Items
-            const items = document.querySelectorAll('.tool-item');
-            items.forEach(item => {
-                // Remove previous animation
-                item.classList.remove('fade-in');
+            // 2. Filter Grid Items
+            const grid = document.getElementById(sectionId + '-grid');
+            const items = grid.children;
+            
+            Array.from(items).forEach(item => {
+                const itemCats = item.getAttribute('data-category') || '';
                 
-                if (category === 'all' || item.getAttribute('data-category') === category) {
+                // Reset animation
+                item.classList.remove('fade-in');
+
+                if (category === 'all' || itemCats.includes(category)) {
                     item.classList.remove('hidden');
-                    // Add animation to visible items
-                    void item.offsetWidth; // trigger reflow
+                    // Retain flex layout for toolbox items
+                    if(sectionId === 'toolbox') item.classList.add('flex');
+                    
+                    // Trigger reflow for animation
+                    void item.offsetWidth; 
                     item.classList.add('fade-in');
                 } else {
                     item.classList.add('hidden');
+                    if(sectionId === 'toolbox') item.classList.remove('flex');
                 }
             });
         }
