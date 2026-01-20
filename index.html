@@ -119,7 +119,6 @@
             </h2>
             
             <div class="grid grid-cols-1 gap-4">
-                
                 <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4">
                     <div class="flex justify-between items-start mb-2">
                         <h3 class="font-bold text-white text-sm">Barangay API</h3>
@@ -144,7 +143,6 @@
                         Monitoring vessel telemetry over high-latency satellite connections.
                     </p>
                 </div>
-
             </div>
         </section>
 
@@ -152,7 +150,6 @@
             <h2 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
                 <span class="text-accent"><i class="fas fa-camera-retro"></i></span> Visuals
             </h2>
-
             <a href="INSERT_YOUR_IMMICH_LINK_HERE" target="_blank" class="link-card group flex items-center justify-between bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4 no-underline">
                 <div class="flex items-center gap-4">
                     <div class="bg-slate-700 text-white p-3 rounded-lg w-12 h-12 flex items-center justify-center group-hover:bg-accent group-hover:text-maritime transition-colors">
@@ -167,79 +164,68 @@
                 </div>
                 <i class="fas fa-external-link-alt text-slate-600 group-hover:text-white text-sm"></i>
             </a>
-
         </section>
 
-        <section class="w-full text-left pt-2">
-            <h2 class="text-lg font-bold text-white mb-6 flex items-center gap-2">
+        <section class="w-full text-left pt-6 border-t border-slate-800">
+            <h2 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
                 <span class="text-accent"><i class="fas fa-toolbox"></i></span> The Toolbox
             </h2>
 
-            <div class="mb-6">
-                <h3 class="text-xs uppercase tracking-widest text-slate-500 mb-3 border-l-2 border-accent pl-3 font-semibold">Office & Ops</h3>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    
-                    <a href="https://tools.pdf24.org" target="_blank" class="block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all">
-                        <span class="block font-bold text-slate-200 text-sm mb-1">PDF24</span>
-                        <span class="block text-xs text-slate-500">Ugly UI, but it's free and works every time.</span>
-                    </a>
-
-                    <div class="block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50">
-                        <span class="block font-bold text-slate-200 text-sm mb-1">Notion</span>
-                        <span class="block text-xs text-slate-500">Where my brain dumps its cache.</span>
-                    </div>
-
-                </div>
+            <div class="flex flex-wrap gap-2 mb-6" id="toolbox-tabs">
+                <button onclick="filterTools('all')" class="tab-btn px-4 py-1.5 text-xs font-bold rounded-full border border-slate-700 bg-accent text-maritime transition-all" data-filter="all">All</button>
+                <button onclick="filterTools('dev')" class="tab-btn px-4 py-1.5 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all" data-filter="dev">Dev</button>
+                <button onclick="filterTools('ops')" class="tab-btn px-4 py-1.5 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all" data-filter="ops">Office & Ops</button>
+                <button onclick="filterTools('creative')" class="tab-btn px-4 py-1.5 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all" data-filter="creative">Creative</button>
             </div>
 
-            <div class="mb-6">
-                <h3 class="text-xs uppercase tracking-widest text-slate-500 mb-3 border-l-2 border-accent pl-3 font-semibold">Development</h3>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    
-                    <div class="block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50">
-                        <span class="block font-bold text-slate-200 text-sm mb-1">VS Code</span>
-                        <span class="block text-xs text-slate-500">Still trying to figure out how to exit Vim.</span>
-                    </div>
-
-                    <div class="block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50">
-                        <span class="block font-bold text-slate-200 text-sm mb-1">Docker</span>
-                        <span class="block text-xs text-slate-500">"It works on my machine" - The Service.</span>
-                    </div>
-
-                    <div class="block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50">
-                        <span class="block font-bold text-slate-200 text-sm mb-1">OCI (Oracle)</span>
-                        <span class="block text-xs text-slate-500">Hosting on the Always Free tier.</span>
-                    </div>
-                    
-                    <a href="https://mermaid.live/" target="_blank" class="block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all">
-                        <span class="block font-bold text-slate-200 text-sm mb-1">Mermaid.js</span>
-                        <span class="block text-xs text-slate-500">Flowcharts via Markdown. Because dragging boxes is pain.</span>
-                    </a>
-
-                    <a href="https://plantuml.com/" target="_blank" class="block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all">
-                        <span class="block font-bold text-slate-200 text-sm mb-1">PlantUML</span>
-                        <span class="block text-xs text-slate-500">Architecture as code. Ugly, but honest.</span>
-                    </a>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3" id="toolbox-grid">
+                
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50" data-category="dev">
+                    <span class="block font-bold text-slate-200 text-sm mb-1">VS Code</span>
+                    <span class="block text-xs text-slate-500">Still trying to figure out how to exit Vim.</span>
                 </div>
-            </div>
 
-            <div>
-                <h3 class="text-xs uppercase tracking-widest text-slate-500 mb-3 border-l-2 border-accent pl-3 font-semibold">Creative & Self-Hosted</h3>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    
-                    <div class="block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50">
-                        <span class="block font-bold text-slate-200 text-sm mb-1">Immich</span>
-                        <span class="block text-xs text-slate-500">Google Photos, but on my own hardware.</span>
-                    </div>
-
-                    <div class="block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50">
-                        <span class="block font-bold text-slate-200 text-sm mb-1">Lightroom</span>
-                        <span class="block text-xs text-slate-500">Color grading reality for the blog.</span>
-                    </div>
-
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50" data-category="dev">
+                    <span class="block font-bold text-slate-200 text-sm mb-1">Docker</span>
+                    <span class="block text-xs text-slate-500">"It works on my machine" - The Service.</span>
                 </div>
-            </div>
 
+                <a href="https://mermaid.live/" target="_blank" class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all" data-category="dev">
+                    <span class="block font-bold text-slate-200 text-sm mb-1">Mermaid.js</span>
+                    <span class="block text-xs text-slate-500">Flowcharts via Markdown. Dragging boxes is pain.</span>
+                </a>
+
+                <a href="https://plantuml.com/" target="_blank" class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all" data-category="dev">
+                    <span class="block font-bold text-slate-200 text-sm mb-1">PlantUML</span>
+                    <span class="block text-xs text-slate-500">Architecture as code. Ugly, but honest.</span>
+                </a>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50" data-category="dev">
+                    <span class="block font-bold text-slate-200 text-sm mb-1">OCI (Oracle)</span>
+                    <span class="block text-xs text-slate-500">Hosting on the Always Free tier.</span>
+                </div>
+
+                <a href="https://tools.pdf24.org" target="_blank" class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all" data-category="ops">
+                    <span class="block font-bold text-slate-200 text-sm mb-1">PDF24</span>
+                    <span class="block text-xs text-slate-500">Ugly UI, but it's free and works every time.</span>
+                </a>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50" data-category="ops">
+                    <span class="block font-bold text-slate-200 text-sm mb-1">Notion</span>
+                    <span class="block text-xs text-slate-500">Where my brain dumps its cache.</span>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50" data-category="creative">
+                    <span class="block font-bold text-slate-200 text-sm mb-1">Immich</span>
+                    <span class="block text-xs text-slate-500">Google Photos, but on my own hardware.</span>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50" data-category="creative">
+                    <span class="block font-bold text-slate-200 text-sm mb-1">Lightroom</span>
+                    <span class="block text-xs text-slate-500">Color grading reality for the blog.</span>
+                </div>
+
+            </div>
         </section>
 
         <footer class="pt-6 border-t border-slate-800 w-full">
@@ -253,5 +239,40 @@
 
     </main>
 
+    <script>
+        function filterTools(category) {
+            // 1. Reset all buttons
+            const buttons = document.querySelectorAll('.tab-btn');
+            buttons.forEach(btn => {
+                // Remove active classes
+                btn.classList.remove('bg-accent', 'text-maritime');
+                // Add inactive classes
+                btn.classList.add('text-slate-400', 'hover:text-white');
+            });
+
+            // 2. Highlight clicked button
+            const activeBtn = document.querySelector(`button[data-filter="${category}"]`);
+            if (activeBtn) {
+                activeBtn.classList.remove('text-slate-400', 'hover:text-white');
+                activeBtn.classList.add('bg-accent', 'text-maritime');
+            }
+
+            // 3. Filter Items
+            const items = document.querySelectorAll('.tool-item');
+            items.forEach(item => {
+                // Remove previous animation
+                item.classList.remove('fade-in');
+                
+                if (category === 'all' || item.getAttribute('data-category') === category) {
+                    item.classList.remove('hidden');
+                    // Add animation to visible items
+                    void item.offsetWidth; // trigger reflow
+                    item.classList.add('fade-in');
+                } else {
+                    item.classList.add('hidden');
+                }
+            });
+        }
+    </script>
 </body>
 </html>
