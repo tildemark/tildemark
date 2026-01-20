@@ -113,13 +113,111 @@
 
         </nav>
 
+        <section class="w-full text-left pt-6 border-t border-slate-800">
+            <h2 class="text-lg font-bold text-white mb-4 flex items-center gap-2">
+                <span class="text-accent"><i class="fas fa-flask"></i></span> Lab / Experiments
+            </h2>
+            
+            <div class="grid grid-cols-1 gap-4">
+                
+                <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-bold text-white text-sm">Barangay API</h3>
+                        <div class="flex gap-2">
+                            <a href="#" class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-accent hover:text-maritime transition-colors font-semibold">Demo</a>
+                            <a href="#" class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Open source API for Philippine PSGC data. Because scraping generic tables is boring.
+                    </p>
+                </div>
+
+                <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="font-bold text-white text-sm">Shipboard IoT</h3>
+                        <div class="flex gap-2">
+                            <a href="#" class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-accent hover:text-maritime transition-colors font-semibold">View</a>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Monitoring vessel telemetry over high-latency satellite connections.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="w-full text-left pt-2">
+            <h2 class="text-lg font-bold text-white mb-6 flex items-center gap-2">
+                <span class="text-accent"><i class="fas fa-toolbox"></i></span> The Toolbox
+            </h2>
+
+            <div class="mb-6">
+                <h3 class="text-xs uppercase tracking-widest text-slate-500 mb-3 border-l-2 border-accent pl-3 font-semibold">Office & Ops</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    
+                    <a href="https://tools.pdf24.org" target="_blank" class="block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all">
+                        <span class="block font-bold text-slate-200 text-sm mb-1">PDF24</span>
+                        <span class="block text-xs text-slate-500">Ugly UI, but it's free and works every time.</span>
+                    </a>
+
+                    <div class="block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50">
+                        <span class="block font-bold text-slate-200 text-sm mb-1">Notion</span>
+                        <span class="block text-xs text-slate-500">Where my brain dumps its cache.</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="mb-6">
+                <h3 class="text-xs uppercase tracking-widest text-slate-500 mb-3 border-l-2 border-accent pl-3 font-semibold">Development</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    
+                    <div class="block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50">
+                        <span class="block font-bold text-slate-200 text-sm mb-1">VS Code</span>
+                        <span class="block text-xs text-slate-500">Still trying to figure out how to exit Vim.</span>
+                    </div>
+
+                    <div class="block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50">
+                        <span class="block font-bold text-slate-200 text-sm mb-1">Docker</span>
+                        <span class="block text-xs text-slate-500">"It works on my machine" - The Service.</span>
+                    </div>
+
+                    <div class="block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50">
+                        <span class="block font-bold text-slate-200 text-sm mb-1">OCI (Oracle)</span>
+                        <span class="block text-xs text-slate-500">Hosting on the Always Free tier.</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div>
+                <h3 class="text-xs uppercase tracking-widest text-slate-500 mb-3 border-l-2 border-accent pl-3 font-semibold">Creative & Self-Hosted</h3>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    
+                    <div class="block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50">
+                        <span class="block font-bold text-slate-200 text-sm mb-1">Immich</span>
+                        <span class="block text-xs text-slate-500">Google Photos, but on my own hardware.</span>
+                    </div>
+
+                    <div class="block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50">
+                        <span class="block font-bold text-slate-200 text-sm mb-1">Lightroom</span>
+                        <span class="block text-xs text-slate-500">Color grading reality for the blog.</span>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
         <footer class="pt-6 border-t border-slate-800 w-full">
             <div class="flex justify-center gap-8 text-2xl text-slate-500 mb-4">
                 <a href="https://linkedin.com/in/tildemark" class="hover:text-white hover:scale-110 transition-transform" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 <a href="mailto:derf@sanchez.ph" class="hover:text-white hover:scale-110 transition-transform" aria-label="Email"><i class="fas fa-envelope"></i></a>
                 <a href="https://facebook.com/tildemark" class="hover:text-white hover:scale-110 transition-transform" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
             </div>
-            <p class="text-xs text-slate-600">© 2025 Alfredo Sanchez Jr. | Hosted on GitHub Pages</p>
+            <p class="text-xs text-slate-600">© 2025 Alfredo Sanchez Jr. | Hosted on <a href="https://github.com/tildemark/tildemark" target="_blank" rel="noopener noreferrer">GitHub Pages</a></p>
         </footer>
 
     </main>
