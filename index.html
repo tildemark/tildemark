@@ -121,13 +121,52 @@
             <div class="flex flex-wrap gap-2 mb-4">
                 <button onclick="filterSection('experiments', 'all')" class="tab-btn active px-3 py-1 text-xs font-bold rounded-full border border-slate-700 bg-accent text-maritime transition-all" data-filter="all">All</button>
                 <button onclick="filterSection('experiments', 'maritime')" class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all" data-filter="maritime">Maritime</button>
-                <button onclick="filterSection('experiments', 'iot')" class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all" data-filter="iot">IoT</button>
-                <button onclick="filterSection('experiments', 'erp')" class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all" data-filter="erp">ERP</button>
+                <button onclick="filterSection('experiments', 'erp')" class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all" data-filter="erp">ERP / Biz</button>
                 <button onclick="filterSection('experiments', 'games')" class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all" data-filter="games">Games</button>
+                <button onclick="filterSection('experiments', 'tools')" class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all" data-filter="tools">Tools</button>
             </div>
 
             <div class="grid grid-cols-1 gap-4" id="experiments-grid">
                 
+                <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4" data-category="maritime">
+                    <div class="flex justify-between items-start mb-2">
+                        <div class="flex flex-col">
+                            <h3 class="font-bold text-white text-sm">Siga</h3>
+                            <span class="text-[10px] text-accent font-mono uppercase tracking-wider mt-0.5">Maritime &bull; IoT</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <a href="https://github.com/tildemark/siga" class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">Lighting up the dark seas. Controls and signaling.</p>
+                </div>
+
+                <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4" data-category="maritime">
+                    <div class="flex justify-between items-start mb-2">
+                        <div class="flex flex-col">
+                            <h3 class="font-bold text-white text-sm">Tala</h3>
+                            <span class="text-[10px] text-accent font-mono uppercase tracking-wider mt-0.5">Maritime &bull; Nav</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <a href="https://github.com/tildemark/tala" class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">Guided by the stars. Celestial or digital navigation aid.</p>
+                </div>
+
+                <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4" data-category="maritime">
+                    <div class="flex justify-between items-start mb-2">
+                        <div class="flex flex-col">
+                            <h3 class="font-bold text-white text-sm">Pulse</h3>
+                            <span class="text-[10px] text-accent font-mono uppercase tracking-wider mt-0.5">IoT &bull; Monitor</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <a href="https://github.com/tildemark/pulse" class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">Keeping a finger on the heartbeat of remote systems.</p>
+                </div>
+
                 <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4" data-category="erp">
                     <div class="flex justify-between items-start mb-2">
                         <div class="flex flex-col">
@@ -135,72 +174,153 @@
                             <span class="text-[10px] text-accent font-mono uppercase tracking-wider mt-0.5">ERP &bull; Finance</span>
                         </div>
                         <div class="flex gap-2">
-                            <a href="#" class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
+                            <a href="https://github.com/tildemark/EquiYield" class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
                         </div>
                     </div>
-                    <p class="text-xs text-slate-400 leading-relaxed">
-                        Full-stack cooperative savings and loan management system. Built with Next.js & Postgres.
-                    </p>
+                    <p class="text-xs text-slate-400 leading-relaxed">Coop savings & loan management. Next.js + Postgres.</p>
                 </div>
 
-                <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4" data-category="maritime iot">
+                <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4" data-category="erp">
                     <div class="flex justify-between items-start mb-2">
                         <div class="flex flex-col">
-                            <h3 class="font-bold text-white text-sm">Shipboard IoT</h3>
-                            <span class="text-[10px] text-accent font-mono uppercase tracking-wider mt-0.5">Maritime &bull; IoT</span>
+                            <h3 class="font-bold text-white text-sm">Tire Inventory</h3>
+                            <span class="text-[10px] text-accent font-mono uppercase tracking-wider mt-0.5">ERP &bull; Logistics</span>
                         </div>
                         <div class="flex gap-2">
-                            <a href="#" class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
+                            <a href="https://github.com/tildemark/tire-inventory" class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
                         </div>
                     </div>
-                    <p class="text-xs text-slate-400 leading-relaxed">
-                        Monitoring vessel telemetry over high-latency satellite connections using efficient protocols.
-                    </p>
+                    <p class="text-xs text-slate-400 leading-relaxed">Tracking rubber meeting the road. Inventory logic.</p>
+                </div>
+
+                <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4" data-category="erp">
+                    <div class="flex justify-between items-start mb-2">
+                        <div class="flex flex-col">
+                            <h3 class="font-bold text-white text-sm">Event Feedback</h3>
+                            <span class="text-[10px] text-accent font-mono uppercase tracking-wider mt-0.5">Biz &bull; Data</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <a href="https://github.com/tildemark/event-feedback" class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">Because knowing what went wrong is half the battle.</p>
+                </div>
+
+                <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4" data-category="games">
+                    <div class="flex justify-between items-start mb-2">
+                        <div class="flex flex-col">
+                            <h3 class="font-bold text-white text-sm">Super Mine Dive</h3>
+                            <span class="text-[10px] text-accent font-mono uppercase tracking-wider mt-0.5">Game Dev</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <a href="https://github.com/tildemark/Super-Mine-Dive" class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">Arcade mining action. Watch out for the bedrock.</p>
                 </div>
 
                 <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4" data-category="games">
                     <div class="flex justify-between items-start mb-2">
                         <div class="flex flex-col">
                             <h3 class="font-bold text-white text-sm">StreetCred</h3>
-                            <span class="text-[10px] text-accent font-mono uppercase tracking-wider mt-0.5">Games &bull; Ranking</span>
+                            <span class="text-[10px] text-accent font-mono uppercase tracking-wider mt-0.5">Games &bull; Rank</span>
                         </div>
                         <div class="flex gap-2">
-                            <a href="#" class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
+                            <a href="https://github.com/tildemark/StreetCred" class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
                         </div>
                     </div>
-                    <p class="text-xs text-slate-400 leading-relaxed">
-                        Elo ranking system for casual office competitions (Darts, Chess, Table Tennis).
-                    </p>
+                    <p class="text-xs text-slate-400 leading-relaxed">Elo ranking system for casual office warfare (Darts, Ping Pong).</p>
                 </div>
 
-                <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4" data-category="civic">
+                <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4" data-category="games">
+                    <div class="flex justify-between items-start mb-2">
+                        <div class="flex flex-col">
+                            <h3 class="font-bold text-white text-sm">Word Solver</h3>
+                            <span class="text-[10px] text-accent font-mono uppercase tracking-wider mt-0.5">Utility</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <a href="https://github.com/tildemark/word-solver" class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">Cheating at word games? I call it "algorithmic optimization."</p>
+                </div>
+
+                <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4" data-category="tools">
                     <div class="flex justify-between items-start mb-2">
                         <div class="flex flex-col">
                             <h3 class="font-bold text-white text-sm">Barangay API</h3>
                             <span class="text-[10px] text-accent font-mono uppercase tracking-wider mt-0.5">Civic Tech</span>
                         </div>
                         <div class="flex gap-2">
-                            <a href="#" class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
+                            <a href="https://github.com/tildemark/ph-geographic-database-generator-to-sql-json-csv" class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
                         </div>
                     </div>
-                    <p class="text-xs text-slate-400 leading-relaxed">
-                        Open source API for Philippine PSGC data. Because scraping generic tables is boring.
-                    </p>
+                    <p class="text-xs text-slate-400 leading-relaxed">PH Geographic generator. Scraping generic tables is boring.</p>
                 </div>
 
-                <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4" data-category="maritime iot">
+                <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4" data-category="tools">
                     <div class="flex justify-between items-start mb-2">
                         <div class="flex flex-col">
-                            <h3 class="font-bold text-white text-sm">Antenna Tracker</h3>
-                            <span class="text-[10px] text-accent font-mono uppercase tracking-wider mt-0.5">Hardware &bull; RF</span>
+                            <h3 class="font-bold text-white text-sm">QRyptshare</h3>
+                            <span class="text-[10px] text-accent font-mono uppercase tracking-wider mt-0.5">Security</span>
                         </div>
                         <div class="flex gap-2">
-                            <a href="#" class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
+                            <a href="https://github.com/tildemark/QRyptshare" class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
                         </div>
                     </div>
-                    <p class="text-xs text-slate-400 leading-relaxed">
-                        1-axis antenna tracker logic for maintaining P2P ship-to-shore links.
-                    </p>
+                    <p class="text-xs text-slate-400 leading-relaxed">QR codes + Encryption. Sharing secrets in plain sight.</p>
+                </div>
+
+                <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4" data-category="tools">
+                    <div class="flex justify-between items-start mb-2">
+                        <div class="flex flex-col">
+                            <h3 class="font-bold text-white text-sm">Anime Subber</h3>
+                            <span class="text-[10px] text-accent font-mono uppercase tracking-wider mt-0.5">Automation</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <a href="https://github.com/tildemark/anime-subber" class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">Auto-fetching subtitles. Because muxing manually is pain.</p>
+                </div>
+
+                <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4" data-category="tools">
+                    <div class="flex justify-between items-start mb-2">
+                        <div class="flex flex-col">
+                            <h3 class="font-bold text-white text-sm">Kanamask</h3>
+                            <span class="text-[10px] text-accent font-mono uppercase tracking-wider mt-0.5">Utility</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <a href="https://github.com/tildemark/kanamask" class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">A utility for character masking (or learning Kana?).</p>
+                </div>
+
+                <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4" data-category="tools">
+                    <div class="flex justify-between items-start mb-2">
+                        <div class="flex flex-col">
+                            <h3 class="font-bold text-white text-sm">Apex Smile</h3>
+                            <span class="text-[10px] text-accent font-mono uppercase tracking-wider mt-0.5">Oracle</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <a href="https://github.com/tildemark/apex-smile" class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">Adding a smile (or utility) to the Oracle APEX experience.</p>
+                </div>
+                
+                 <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4" data-category="tools">
+                    <div class="flex justify-between items-start mb-2">
+                        <div class="flex flex-col">
+                            <h3 class="font-bold text-white text-sm">ABCDE</h3>
+                            <span class="text-[10px] text-accent font-mono uppercase tracking-wider mt-0.5">Misc</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <a href="https://github.com/tildemark/ABCDE" class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed">The alphabet of code. A basic playground.</p>
                 </div>
 
             </div>
