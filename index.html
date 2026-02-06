@@ -142,27 +142,42 @@
             </h2>
 
             <div class="flex flex-wrap gap-2 mb-4">
-                <button onclick="filterSection('experiments', 'all')"
+                <button onclick="filterSection('experiments', 'privacy')"
                     class="tab-btn active px-3 py-1 text-xs font-bold rounded-full border border-slate-700 bg-accent text-maritime transition-all"
-                    data-filter="all">All</button>
-                <button onclick="filterSection('experiments', 'erp')"
+                    data-filter="privacy">Privacy</button>
+                <button onclick="filterSection('experiments', 'business')"
                     class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all"
-                    data-filter="erp">ERP</button>
-                <button onclick="filterSection('experiments', 'iot')"
+                    data-filter="business">Business</button>
+                <button onclick="filterSection('experiments', 'ai')"
                     class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all"
-                    data-filter="iot">IoT</button>
+                    data-filter="ai">AI</button>
+                <button onclick="filterSection('experiments', 'web')"
+                    class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all"
+                    data-filter="web">Web</button>
+                <button onclick="filterSection('experiments', 'windows')"
+                    class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all"
+                    data-filter="windows">Windows</button>
+                <button onclick="filterSection('experiments', 'android')"
+                    class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all"
+                    data-filter="android">Android</button>
+                <button onclick="filterSection('experiments', 'hardware')"
+                    class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all"
+                    data-filter="hardware">Hardware</button>
                 <button onclick="filterSection('experiments', 'games')"
                     class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all"
                     data-filter="games">Games</button>
                 <button onclick="filterSection('experiments', 'tools')"
                     class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all"
                     data-filter="tools">Tools</button>
+                <button onclick="filterSection('experiments', 'all')"
+                    class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all"
+                    data-filter="all">All</button>
             </div>
 
             <div class="grid grid-cols-1 gap-4" id="experiments-grid">
 
                 <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4"
-                    data-category="erp">
+                    data-category="business web">
                     <div class="flex justify-between items-start mb-2">
                         <div class="flex flex-col">
                             <h3 class="font-bold text-white text-sm">ABCDE</h3>
@@ -174,12 +189,19 @@
                                 class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
                         </div>
                     </div>
-                    <p class="text-xs text-slate-400 leading-relaxed">A complete ERP system. The alphabet of enterprise
+                    <p class="text-xs text-slate-400 leading-relaxed mb-2">A complete ERP system. The alphabet of
+                        enterprise
                         resource planning.</p>
+                    <div class="flex gap-1 flex-wrap">
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30">PHP</span>
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-yellow-500/20 text-yellow-300 border border-yellow-500/30">JavaScript</span>
+                    </div>
                 </div>
 
                 <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4"
-                    data-category="erp">
+                    data-category="business web">
                     <div class="flex justify-between items-start mb-2">
                         <div class="flex flex-col">
                             <h3 class="font-bold text-white text-sm">Tala</h3>
@@ -191,12 +213,19 @@
                                 class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
                         </div>
                     </div>
-                    <p class="text-xs text-slate-400 leading-relaxed">BIR compliant accounting system. Making taxes less
+                    <p class="text-xs text-slate-400 leading-relaxed mb-2">BIR compliant accounting system. Making taxes
+                        less
                         taxing.</p>
+                    <div class="flex gap-1 flex-wrap">
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30">PHP</span>
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-yellow-500/20 text-yellow-300 border border-yellow-500/30">JavaScript</span>
+                    </div>
                 </div>
 
                 <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4"
-                    data-category="erp">
+                    data-category="business web">
                     <div class="flex justify-between items-start mb-2">
                         <div class="flex flex-col">
                             <h3 class="font-bold text-white text-sm">EquiYield</h3>
@@ -210,11 +239,17 @@
                                 class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
                         </div>
                     </div>
-                    <p class="text-xs text-slate-400 leading-relaxed">Cooperative savings and loan management.</p>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-2">Cooperative savings and loan management.</p>
+                    <div class="flex gap-1 flex-wrap">
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-yellow-500/20 text-yellow-300 border border-yellow-500/30">JavaScript</span>
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-orange-500/20 text-orange-300 border border-orange-500/30">HTML</span>
+                    </div>
                 </div>
 
                 <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4"
-                    data-category="erp">
+                    data-category="business web">
                     <div class="flex justify-between items-start mb-2">
                         <div class="flex flex-col">
                             <h3 class="font-bold text-white text-sm">Apex Smile</h3>
@@ -226,12 +261,19 @@
                                 class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
                         </div>
                     </div>
-                    <p class="text-xs text-slate-400 leading-relaxed">Dentist appointment and booking system. Open wide
+                    <p class="text-xs text-slate-400 leading-relaxed mb-2">Dentist appointment and booking system. Open
+                        wide
                         for open source.</p>
+                    <div class="flex gap-1 flex-wrap">
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30">PHP</span>
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-yellow-500/20 text-yellow-300 border border-yellow-500/30">JavaScript</span>
+                    </div>
                 </div>
 
                 <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4"
-                    data-category="erp">
+                    data-category="business web">
                     <div class="flex justify-between items-start mb-2">
                         <div class="flex flex-col">
                             <h3 class="font-bold text-white text-sm">Tire Inventory</h3>
@@ -243,8 +285,15 @@
                                 class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
                         </div>
                     </div>
-                    <p class="text-xs text-slate-400 leading-relaxed">Tracking rubber meeting the road. Inventory logic.
+                    <p class="text-xs text-slate-400 leading-relaxed mb-2">Tracking rubber meeting the road. Inventory
+                        logic.
                     </p>
+                    <div class="flex gap-1 flex-wrap">
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30">PHP</span>
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-yellow-500/20 text-yellow-300 border border-yellow-500/30">JavaScript</span>
+                    </div>
                 </div>
 
                 <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4"
@@ -265,7 +314,7 @@
                 </div>
 
                 <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4"
-                    data-category="iot">
+                    data-category="hardware web">
                     <div class="flex justify-between items-start mb-2">
                         <div class="flex flex-col">
                             <h3 class="font-bold text-white text-sm">Siga</h3>
@@ -277,12 +326,18 @@
                                 class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
                         </div>
                     </div>
-                    <p class="text-xs text-slate-400 leading-relaxed">IoT smart plug control. Let there be light
+                    <p class="text-xs text-slate-400 leading-relaxed mb-2">IoT smart plug control. Let there be light
                         (remotely).</p>
+                    <div class="flex gap-1 flex-wrap">
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30">Python</span>
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-pink-500/20 text-pink-300 border border-pink-500/30">C++</span>
+                    </div>
                 </div>
 
                 <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4"
-                    data-category="iot">
+                    data-category="hardware web">
                     <div class="flex justify-between items-start mb-2">
                         <div class="flex flex-col">
                             <h3 class="font-bold text-white text-sm">Pulse</h3>
@@ -294,12 +349,18 @@
                                 class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
                         </div>
                     </div>
-                    <p class="text-xs text-slate-400 leading-relaxed">Server monitor and visitor counter. Keeping a
+                    <p class="text-xs text-slate-400 leading-relaxed mb-2">Server monitor and visitor counter. Keeping a
                         finger on the heartbeat.</p>
+                    <div class="flex gap-1 flex-wrap">
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30">Python</span>
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-yellow-500/20 text-yellow-300 border border-yellow-500/30">JavaScript</span>
+                    </div>
                 </div>
 
                 <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4"
-                    data-category="iot">
+                    data-category="hardware web">
                     <div class="flex justify-between items-start mb-2">
                         <div class="flex flex-col">
                             <h3 class="font-bold text-white text-sm">Beacon</h3>
@@ -311,12 +372,18 @@
                                 class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
                         </div>
                     </div>
-                    <p class="text-xs text-slate-400 leading-relaxed">Basic Employee Attendance Connecting Oceans &
+                    <p class="text-xs text-slate-400 leading-relaxed mb-2">Basic Employee Attendance Connecting Oceans &
                         Networks.</p>
+                    <div class="flex gap-1 flex-wrap">
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30">Python</span>
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-sky-500/20 text-sky-300 border border-sky-500/30">TypeScript</span>
+                    </div>
                 </div>
 
                 <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4"
-                    data-category="games">
+                    data-category="games web android">
                     <div class="flex justify-between items-start mb-2">
                         <div class="flex flex-col">
                             <h3 class="font-bold text-white text-sm">Super Mine Dive</h3>
@@ -328,12 +395,18 @@
                                 class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
                         </div>
                     </div>
-                    <p class="text-xs text-slate-400 leading-relaxed">Infinite Minesweeper game. Dig deep, don't
+                    <p class="text-xs text-slate-400 leading-relaxed mb-2">Infinite Minesweeper game. Dig deep, don't
                         explode.</p>
+                    <div class="flex gap-1 flex-wrap">
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-yellow-500/20 text-yellow-300 border border-yellow-500/30">JavaScript</span>
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-orange-500/20 text-orange-300 border border-orange-500/30">HTML</span>
+                    </div>
                 </div>
 
                 <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4"
-                    data-category="games">
+                    data-category="games web">
                     <div class="flex justify-between items-start mb-2">
                         <div class="flex flex-col">
                             <h3 class="font-bold text-white text-sm">StreetCred</h3>
@@ -345,12 +418,19 @@
                                 class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
                         </div>
                     </div>
-                    <p class="text-xs text-slate-400 leading-relaxed">Community ranking system. Elo ratings for office
+                    <p class="text-xs text-slate-400 leading-relaxed mb-2">Community ranking system. Elo ratings for
+                        office
                         warfare.</p>
+                    <div class="flex gap-1 flex-wrap">
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-yellow-500/20 text-yellow-300 border border-yellow-500/30">JavaScript</span>
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-orange-500/20 text-orange-300 border border-orange-500/30">HTML</span>
+                    </div>
                 </div>
 
                 <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4"
-                    data-category="games">
+                    data-category="games web tools">
                     <div class="flex justify-between items-start mb-2">
                         <div class="flex flex-col">
                             <h3 class="font-bold text-white text-sm">Word Solver</h3>
@@ -364,12 +444,19 @@
                                 class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
                         </div>
                     </div>
-                    <p class="text-xs text-slate-400 leading-relaxed">Wordle and puzzle solver. Algorithmic optimization
+                    <p class="text-xs text-slate-400 leading-relaxed mb-2">Wordle and puzzle solver. Algorithmic
+                        optimization
                         for word games.</p>
+                    <div class="flex gap-1 flex-wrap">
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-yellow-500/20 text-yellow-300 border border-yellow-500/30">JavaScript</span>
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-orange-500/20 text-orange-300 border border-orange-500/30">HTML</span>
+                    </div>
                 </div>
 
                 <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4"
-                    data-category="tools">
+                    data-category="tools web">
                     <div class="flex justify-between items-start mb-2">
                         <div class="flex flex-col">
                             <h3 class="font-bold text-white text-sm">Barangay API</h3>
@@ -383,12 +470,19 @@
                                 class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
                         </div>
                     </div>
-                    <p class="text-xs text-slate-400 leading-relaxed">PH Geographic generator. Scraping generic tables
+                    <p class="text-xs text-slate-400 leading-relaxed mb-2">PH Geographic generator. Scraping generic
+                        tables
                         is boring.</p>
+                    <div class="flex gap-1 flex-wrap">
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-purple-500/20 text-purple-300 border border-purple-500/30">PHP</span>
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-yellow-500/20 text-yellow-300 border border-yellow-500/30">JavaScript</span>
+                    </div>
                 </div>
 
                 <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4"
-                    data-category="tools">
+                    data-category="tools web privacy android">
                     <div class="flex justify-between items-start mb-2">
                         <div class="flex flex-col">
                             <h3 class="font-bold text-white text-sm">QRyptshare</h3>
@@ -402,12 +496,19 @@
                                 class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
                         </div>
                     </div>
-                    <p class="text-xs text-slate-400 leading-relaxed">QR Code generator + Encryption. Sharing secrets in
+                    <p class="text-xs text-slate-400 leading-relaxed mb-2">QR Code generator + Encryption. Sharing
+                        secrets in
                         plain sight.</p>
+                    <div class="flex gap-1 flex-wrap">
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-yellow-500/20 text-yellow-300 border border-yellow-500/30">JavaScript</span>
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-orange-500/20 text-orange-300 border border-orange-500/30">HTML</span>
+                    </div>
                 </div>
 
                 <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4"
-                    data-category="tools">
+                    data-category="tools windows">
                     <div class="flex justify-between items-start mb-2">
                         <div class="flex flex-col">
                             <h3 class="font-bold text-white text-sm">Anime Subber</h3>
@@ -419,12 +520,16 @@
                                 class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
                         </div>
                     </div>
-                    <p class="text-xs text-slate-400 leading-relaxed">Japanese video subtitle generator. AI-powered
+                    <p class="text-xs text-slate-400 leading-relaxed mb-2">Japanese video subtitle generator. AI-powered
                         pipeline.</p>
+                    <div class="flex gap-1 flex-wrap">
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-blue-500/20 text-blue-300 border border-blue-500/30">Python</span>
+                    </div>
                 </div>
 
                 <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4"
-                    data-category="tools">
+                    data-category="tools web privacy">
                     <div class="flex justify-between items-start mb-2">
                         <div class="flex flex-col">
                             <h3 class="font-bold text-white text-sm">Kanamask</h3>
@@ -438,12 +543,19 @@
                                 class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
                         </div>
                     </div>
-                    <p class="text-xs text-slate-400 leading-relaxed">Username generator using Kana obfuscation. Privacy
+                    <p class="text-xs text-slate-400 leading-relaxed mb-2">Username generator using Kana obfuscation.
+                        Privacy
                         via Katakana.</p>
+                    <div class="flex gap-1 flex-wrap">
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-yellow-500/20 text-yellow-300 border border-yellow-500/30">JavaScript</span>
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-orange-500/20 text-orange-300 border border-orange-500/30">HTML</span>
+                    </div>
                 </div>
 
                 <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4"
-                    data-category="tools">
+                    data-category="tools web ai">
                     <div class="flex justify-between items-start mb-2">
                         <div class="flex flex-col">
                             <h3 class="font-bold text-white text-sm">Blueprints.ai</h3>
@@ -457,8 +569,63 @@
                                 class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
                         </div>
                     </div>
-                    <p class="text-xs text-slate-400 leading-relaxed">Centralized repository for standardized AI
+                    <p class="text-xs text-slate-400 leading-relaxed mb-2">Centralized repository for standardized AI
                         prompts, software skeletons, and automation scripts.</p>
+                    <div class="flex gap-1 flex-wrap">
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-sky-500/20 text-sky-300 border border-sky-500/30">TypeScript</span>
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-yellow-500/20 text-yellow-300 border border-yellow-500/30">JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- Privacy Projects -->
+                <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4"
+                    data-category="privacy web business ai">
+                    <div class="flex justify-between items-start mb-2">
+                        <div class="flex flex-col">
+                            <h3 class="font-bold text-white text-sm">TANOD</h3>
+                            <span class="text-[10px] text-accent font-mono uppercase tracking-wider mt-0.5">Privacy
+                                &bull;
+                                DPO Platform</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <a href="https://github.com/tildemark/tanod"
+                                class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-2">Data Protection Officer compliance platform
+                        with AI-powered risk assessment.</p>
+                    <div class="flex gap-1 flex-wrap">
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-sky-500/20 text-sky-300 border border-sky-500/30">TypeScript</span>
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-yellow-500/20 text-yellow-300 border border-yellow-500/30">JavaScript</span>
+                    </div>
+                </div>
+
+                <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4"
+                    data-category="privacy web tools ai">
+                    <div class="flex justify-between items-start mb-2">
+                        <div class="flex flex-col">
+                            <h3 class="font-bold text-white text-sm">SILIP</h3>
+                            <span class="text-[10px] text-accent font-mono uppercase tracking-wider mt-0.5">Privacy
+                                &bull;
+                                Legal Search</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <a href="https://github.com/tildemark/silip"
+                                class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-2">Searchable Interface for Legal Information &
+                        Privacy. Semantic search with AI re-ranking.</p>
+                    <div class="flex gap-1 flex-wrap">
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-sky-500/20 text-sky-300 border border-sky-500/30">TypeScript</span>
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-yellow-500/20 text-yellow-300 border border-yellow-500/30">JavaScript</span>
+                    </div>
                 </div>
 
             </div>
@@ -510,34 +677,250 @@
             </h2>
 
             <div class="flex flex-wrap gap-2 mb-4">
-                <button onclick="filterSection('toolbox', 'all')"
+                <button onclick="filterSection('toolbox', 'languages')"
                     class="tab-btn active px-3 py-1 text-xs font-bold rounded-full border border-slate-700 bg-accent text-maritime transition-all"
+                    data-filter="languages">Languages</button>
+                <button onclick="filterSection('toolbox', 'frontend')"
+                    class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all"
+                    data-filter="frontend">Frontend</button>
+                <button onclick="filterSection('toolbox', 'backend')"
+                    class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all"
+                    data-filter="backend">Backend</button>
+                <button onclick="filterSection('toolbox', 'database')"
+                    class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all"
+                    data-filter="database">Database</button>
+                <button onclick="filterSection('toolbox', 'devops')"
+                    class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all"
+                    data-filter="devops">DevOps</button>
+                <button onclick="filterSection('toolbox', 'hardware')"
+                    class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all"
+                    data-filter="hardware">Hardware & IoT</button>
+                <button onclick="filterSection('toolbox', 'design')"
+                    class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all"
+                    data-filter="design">Design & Docs</button>
+                <button onclick="filterSection('toolbox', 'tools')"
+                    class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all"
+                    data-filter="tools">Tools</button>
+                <button onclick="filterSection('toolbox', 'all')"
+                    class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all"
                     data-filter="all">All</button>
-                <button onclick="filterSection('toolbox', 'dev')"
-                    class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all"
-                    data-filter="dev">Dev</button>
-                <button onclick="filterSection('toolbox', 'ops')"
-                    class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all"
-                    data-filter="ops">Ops</button>
-                <button onclick="filterSection('toolbox', 'creative')"
-                    class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all"
-                    data-filter="creative">Creative</button>
             </div>
 
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3" id="toolbox-grid">
 
+                <!-- Languages -->
                 <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
-                    data-category="dev">
-                    <div class="w-8 h-8 flex items-center justify-center text-accent text-xl"><i
-                            class="fas fa-code"></i></div>
+                    data-category="languages">
+                    <img src="https://cdn.simpleicons.org/cplusplus/38bdf8" class="w-8 h-8 flex-shrink-0" alt="C++">
                     <div>
-                        <span class="block font-bold text-slate-200 text-sm mb-0.5">VS Code</span>
-                        <span class="block text-xs text-slate-500">Still trying to figure out how to exit Vim.</span>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">C/C++</span>
+                        <span class="block text-xs text-slate-500">Low-level power.</span>
                     </div>
                 </div>
 
                 <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
-                    data-category="dev">
+                    data-category="languages">
+                    <div class="w-8 h-8 flex items-center justify-center text-accent text-xl"><i
+                            class="fas fa-microchip"></i></div>
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Assembly</span>
+                        <span class="block text-xs text-slate-500">Talking to silicon.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="languages backend">
+                    <img src="https://cdn.simpleicons.org/python/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Python">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Python</span>
+                        <span class="block text-xs text-slate-500">Swiss Army knife.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="languages">
+                    <div class="w-8 h-8 flex items-center justify-center text-accent text-xl"><i
+                            class="fas fa-terminal"></i></div>
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Perl</span>
+                        <span class="block text-xs text-slate-500">Text processing wizard.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="languages frontend backend">
+                    <img src="https://cdn.simpleicons.org/javascript/38bdf8" class="w-8 h-8 flex-shrink-0"
+                        alt="JavaScript">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">JavaScript</span>
+                        <span class="block text-xs text-slate-500">Everywhere language.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="languages frontend">
+                    <img src="https://cdn.simpleicons.org/typescript/38bdf8" class="w-8 h-8 flex-shrink-0"
+                        alt="TypeScript">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">TypeScript</span>
+                        <span class="block text-xs text-slate-500">JavaScript with types.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="languages frontend">
+                    <img src="https://cdn.simpleicons.org/html5/38bdf8" class="w-8 h-8 flex-shrink-0" alt="HTML">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">HTML</span>
+                        <span class="block text-xs text-slate-500">Web skeleton.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="languages frontend">
+                    <div class="w-8 h-8 flex items-center justify-center text-accent text-xl"><i
+                            class="fab fa-css3-alt"></i></div>
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">CSS</span>
+                        <span class="block text-xs text-slate-500">Web makeup.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="languages frontend">
+                    <img src="https://cdn.simpleicons.org/react/38bdf8" class="w-8 h-8 flex-shrink-0" alt="React">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">React.js</span>
+                        <span class="block text-xs text-slate-500">Component magic.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="languages frontend">
+                    <img src="https://cdn.simpleicons.org/nextdotjs/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Next.js">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Next.js</span>
+                        <span class="block text-xs text-slate-500">React on steroids.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="languages">
+                    <img src="https://cdn.simpleicons.org/openjdk/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Java">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Java</span>
+                        <span class="block text-xs text-slate-500">Enterprise workhorse.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="languages backend">
+                    <img src="https://cdn.simpleicons.org/php/38bdf8" class="w-8 h-8 flex-shrink-0" alt="PHP">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">PHP</span>
+                        <span class="block text-xs text-slate-500">Web veteran.</span>
+                    </div>
+                </div>
+
+                <!-- Frontend -->
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="frontend design">
+                    <img src="https://cdn.simpleicons.org/figma/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Figma">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Figma</span>
+                        <span class="block text-xs text-slate-500">Design collaboration.</span>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="backend">
+                    <img src="https://cdn.simpleicons.org/codeigniter/38bdf8" class="w-8 h-8 flex-shrink-0"
+                        alt="CodeIgniter">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">CodeIgniter</span>
+                        <span class="block text-xs text-slate-500">PHP framework.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="backend">
+                    <img src="https://cdn.simpleicons.org/nodedotjs/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Node.js">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Node.js</span>
+                        <span class="block text-xs text-slate-500">JavaScript runtime.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="backend">
+                    <img src="https://cdn.simpleicons.org/express/38bdf8" class="w-8 h-8 flex-shrink-0"
+                        alt="Express.js">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Express.js</span>
+                        <span class="block text-xs text-slate-500">Minimal Node framework.</span>
+                    </div>
+                </div>
+
+                <!-- Database -->
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="database">
+                    <img src="https://cdn.simpleicons.org/mysql/38bdf8" class="w-8 h-8 flex-shrink-0" alt="MySQL">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">MySQL</span>
+                        <span class="block text-xs text-slate-500">Relational classic.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="database">
+                    <img src="https://cdn.simpleicons.org/mariadb/38bdf8" class="w-8 h-8 flex-shrink-0" alt="MariaDB">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">MariaDB</span>
+                        <span class="block text-xs text-slate-500">MySQL fork.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="database">
+                    <img src="https://cdn.simpleicons.org/postgresql/38bdf8" class="w-8 h-8 flex-shrink-0"
+                        alt="PostgreSQL">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">PostgreSQL</span>
+                        <span class="block text-xs text-slate-500">Advanced SQL.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="database">
+                    <img src="https://cdn.simpleicons.org/firebase/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Firebase">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Firebase</span>
+                        <span class="block text-xs text-slate-500">Google's BaaS.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="database">
+                    <img src="https://cdn.simpleicons.org/redis/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Redis">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Redis</span>
+                        <span class="block text-xs text-slate-500">In-memory cache.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="database">
+                    <img src="https://cdn.simpleicons.org/mongodb/38bdf8" class="w-8 h-8 flex-shrink-0" alt="MongoDB">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">MongoDB</span>
+                        <span class="block text-xs text-slate-500">NoSQL document DB.</span>
+                    </div>
+                </div>
+
+                <!-- DevOps & Infrastructure -->
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="devops">
                     <img src="https://cdn.simpleicons.org/docker/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Docker">
                     <div>
                         <span class="block font-bold text-slate-200 text-sm mb-0.5">Docker</span>
@@ -545,9 +928,136 @@
                     </div>
                 </div>
 
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="devops">
+                    <div class="w-8 h-8 flex items-center justify-center text-accent text-xl"><i class="fab fa-aws"></i>
+                    </div>
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">AWS</span>
+                        <span class="block text-xs text-slate-500">Cloud giant.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="devops">
+                    <div class="w-8 h-8 flex items-center justify-center text-accent text-xl"><i
+                            class="fas fa-cloud"></i></div>
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">OCI (Oracle)</span>
+                        <span class="block text-xs text-slate-500">Hosting on the Always Free tier.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="devops">
+                    <img src="https://cdn.simpleicons.org/alibabacloud/38bdf8" class="w-8 h-8 flex-shrink-0"
+                        alt="Alibaba Cloud">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Alibaba Cloud</span>
+                        <span class="block text-xs text-slate-500">Asia cloud provider.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="devops">
+                    <img src="https://cdn.simpleicons.org/googlecloud/38bdf8" class="w-8 h-8 flex-shrink-0"
+                        alt="Google Cloud">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Google Cloud</span>
+                        <span class="block text-xs text-slate-500">GCP infrastructure.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="devops">
+                    <img src="https://cdn.simpleicons.org/githubactions/38bdf8" class="w-8 h-8 flex-shrink-0"
+                        alt="GitHub Actions">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">GitHub Actions</span>
+                        <span class="block text-xs text-slate-500">CI/CD automation.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="devops">
+                    <img src="https://cdn.simpleicons.org/jekyll/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Jekyll">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Jekyll</span>
+                        <span class="block text-xs text-slate-500">Static site generator.</span>
+                    </div>
+                </div>
+
+                <!-- Hardware & IoT -->
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="hardware">
+                    <img src="https://cdn.simpleicons.org/espressif/38bdf8" class="w-8 h-8 flex-shrink-0" alt="ESP32">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">ESP32</span>
+                        <span class="block text-xs text-slate-500">WiFi microcontroller.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="hardware">
+                    <img src="https://cdn.simpleicons.org/arduino/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Arduino">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Arduino</span>
+                        <span class="block text-xs text-slate-500">Maker's friend.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="hardware">
+                    <img src="https://cdn.simpleicons.org/raspberrypi/38bdf8" class="w-8 h-8 flex-shrink-0"
+                        alt="Raspberry Pi">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Raspberry Pi</span>
+                        <span class="block text-xs text-slate-500">Credit card computer.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="hardware">
+                    <div class="w-8 h-8 flex items-center justify-center text-accent text-xl"><i
+                            class="fab fa-windows"></i></div>
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Windows</span>
+                        <span class="block text-xs text-slate-500">Desktop OS.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="hardware">
+                    <img src="https://cdn.simpleicons.org/linux/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Linux">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Linux</span>
+                        <span class="block text-xs text-slate-500">Open source OS.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="hardware">
+                    <div class="w-8 h-8 flex items-center justify-center text-accent text-xl"><i
+                            class="fas fa-server"></i></div>
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Unix</span>
+                        <span class="block text-xs text-slate-500">Server foundation.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="hardware">
+                    <img src="https://cdn.simpleicons.org/android/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Android">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Android</span>
+                        <span class="block text-xs text-slate-500">Mobile OS.</span>
+                    </div>
+                </div>
+
+                <!-- Design & Documentation -->
                 <a href="https://mermaid.live/" target="_blank"
                     class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
-                    data-category="dev">
+                    data-category="design">
                     <img src="https://cdn.simpleicons.org/mermaid/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Mermaid">
                     <div>
                         <span class="block font-bold text-slate-200 text-sm mb-0.5">Mermaid.js</span>
@@ -557,7 +1067,7 @@
 
                 <a href="https://plantuml.com/" target="_blank"
                     class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
-                    data-category="dev">
+                    data-category="design">
                     <div class="w-8 h-8 flex items-center justify-center text-accent text-xl"><i
                             class="fas fa-sitemap"></i></div>
                     <div>
@@ -567,18 +1077,76 @@
                 </a>
 
                 <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
-                    data-category="dev">
+                    data-category="design">
                     <div class="w-8 h-8 flex items-center justify-center text-accent text-xl"><i
-                            class="fas fa-cloud"></i></div>
+                            class="fas fa-project-diagram"></i></div>
                     <div>
-                        <span class="block font-bold text-slate-200 text-sm mb-0.5">OCI (Oracle)</span>
-                        <span class="block text-xs text-slate-500">Hosting on the Always Free tier.</span>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">UML</span>
+                        <span class="block text-xs text-slate-500">System modeling.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="design tools">
+                    <div class="w-8 h-8 flex items-center justify-center text-accent text-xl"><i
+                            class="fas fa-draw-polygon"></i></div>
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Visio</span>
+                        <span class="block text-xs text-slate-500">Microsoft diagramming.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="design tools">
+                    <img src="https://cdn.simpleicons.org/miro/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Miro">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Miro</span>
+                        <span class="block text-xs text-slate-500">Collaborative whiteboard.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="design tools">
+                    <img src="https://cdn.simpleicons.org/notion/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Notion">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Notion</span>
+                        <span class="block text-xs text-slate-500">Brain cache.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="design">
+                    <img src="https://cdn.simpleicons.org/docusaurus/38bdf8" class="w-8 h-8 flex-shrink-0"
+                        alt="Docusaurus">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Docusaurus</span>
+                        <span class="block text-xs text-slate-500">Documentation sites.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="design">
+                    <img src="https://cdn.simpleicons.org/swagger/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Swagger">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Swagger</span>
+                        <span class="block text-xs text-slate-500">API documentation.</span>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="tools">
+                    <div class="w-8 h-8 flex items-center justify-center text-accent text-xl"><i
+                            class="fas fa-code"></i></div>
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">VS Code</span>
+                        <span class="block text-xs text-slate-500">Still trying to figure out how to exit Vim.</span>
                     </div>
                 </div>
 
                 <a href="https://tools.pdf24.org" target="_blank"
                     class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
-                    data-category="ops">
+                    data-category="tools">
                     <div class="w-8 h-8 flex items-center justify-center text-accent text-2xl"><i
                             class="fas fa-file-pdf"></i></div>
                     <div>
@@ -588,16 +1156,7 @@
                 </a>
 
                 <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
-                    data-category="ops">
-                    <img src="https://cdn.simpleicons.org/notion/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Notion">
-                    <div>
-                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Notion</span>
-                        <span class="block text-xs text-slate-500">Brain cache.</span>
-                    </div>
-                </div>
-
-                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
-                    data-category="creative">
+                    data-category="tools">
                     <img src="https://cdn.simpleicons.org/immich/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Immich">
                     <div>
                         <span class="block font-bold text-slate-200 text-sm mb-0.5">Immich</span>
@@ -606,12 +1165,32 @@
                 </div>
 
                 <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
-                    data-category="creative">
+                    data-category="tools">
                     <div class="w-8 h-8 flex items-center justify-center text-accent text-xl"><i
                             class="fas fa-sliders"></i></div>
                     <div>
                         <span class="block font-bold text-slate-200 text-sm mb-0.5">Lightroom</span>
                         <span class="block text-xs text-slate-500">Color grading reality.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="tools">
+                    <div class="w-8 h-8 flex items-center justify-center text-accent text-xl"><i
+                            class="fas fa-file-alt"></i></div>
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">MS Office</span>
+                        <span class="block text-xs text-slate-500">Productivity suite.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="tools">
+                    <div class="w-8 h-8 flex items-center justify-center text-accent text-xl"><i
+                            class="fas fa-image"></i></div>
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">cwebp</span>
+                        <span class="block text-xs text-slate-500">WebP converter.</span>
                     </div>
                 </div>
 
@@ -662,7 +1241,10 @@
                 // Reset animation
                 item.classList.remove('fade-in');
 
-                if (category === 'all' || itemCats.includes(category)) {
+                // Check if category matches (support space-separated categories)
+                const categoryMatch = category === 'all' || itemCats.split(' ').includes(category);
+
+                if (categoryMatch) {
                     item.classList.remove('hidden');
                     // Retain flex layout for toolbox items
                     if (sectionId === 'toolbox') item.classList.add('flex');
@@ -676,6 +1258,12 @@
                 }
             });
         }
+
+        // Apply default filters on page load
+        window.addEventListener('DOMContentLoaded', function () {
+            filterSection('experiments', 'privacy');
+            filterSection('toolbox', 'languages');
+        });
     </script>
 </body>
 
