@@ -698,6 +698,9 @@
                 <button onclick="filterSection('toolbox', 'design')"
                     class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all"
                     data-filter="design">Design & Docs</button>
+                <button onclick="filterSection('toolbox', 'projectmgmt')"
+                    class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all"
+                    data-filter="projectmgmt">Project Mgmt</button>
                 <button onclick="filterSection('toolbox', 'tools')"
                     class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all"
                     data-filter="tools">Tools</button>
@@ -786,23 +789,25 @@
                     </div>
                 </div>
 
-                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                <a href="https://react.dev/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
                     data-category="languages frontend">
                     <img src="https://cdn.simpleicons.org/react/38bdf8" class="w-8 h-8 flex-shrink-0" alt="React">
                     <div>
                         <span class="block font-bold text-slate-200 text-sm mb-0.5">React.js</span>
                         <span class="block text-xs text-slate-500">Component magic.</span>
                     </div>
-                </div>
+                </a>
 
-                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                <a href="https://nextjs.org/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
                     data-category="languages frontend">
                     <img src="https://cdn.simpleicons.org/nextdotjs/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Next.js">
                     <div>
                         <span class="block font-bold text-slate-200 text-sm mb-0.5">Next.js</span>
                         <span class="block text-xs text-slate-500">React on steroids.</span>
                     </div>
-                </div>
+                </a>
 
                 <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
                     data-category="languages">
@@ -822,15 +827,26 @@
                     </div>
                 </div>
 
+                <a href="https://www.ruby-lang.org/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
+                    data-category="languages backend">
+                    <img src="https://cdn.simpleicons.org/ruby/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Ruby">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Ruby</span>
+                        <span class="block text-xs text-slate-500">Elegant scripting.</span>
+                    </div>
+                </a>
+
                 <!-- Frontend -->
-                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                <a href="https://www.figma.com/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
                     data-category="frontend design">
                     <img src="https://cdn.simpleicons.org/figma/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Figma">
                     <div>
                         <span class="block font-bold text-slate-200 text-sm mb-0.5">Figma</span>
                         <span class="block text-xs text-slate-500">Design collaboration.</span>
                     </div>
-                </div>
+                </a>
 
                 <!-- Backend -->
                 <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
@@ -843,14 +859,15 @@
                     </div>
                 </div>
 
-                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                <a href="https://nodejs.org/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
                     data-category="backend">
                     <img src="https://cdn.simpleicons.org/nodedotjs/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Node.js">
                     <div>
                         <span class="block font-bold text-slate-200 text-sm mb-0.5">Node.js</span>
                         <span class="block text-xs text-slate-500">JavaScript runtime.</span>
                     </div>
-                </div>
+                </a>
 
                 <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
                     data-category="backend">
@@ -862,15 +879,77 @@
                     </div>
                 </div>
 
+                <a href="https://wordpress.org/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
+                    data-category="backend">
+                    <img src="https://cdn.simpleicons.org/wordpress/38bdf8" class="w-8 h-8 flex-shrink-0"
+                        alt="WordPress">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">WordPress</span>
+                        <span class="block text-xs text-slate-500">CMS & blogging platform.</span>
+                    </div>
+                </a>
+
+                <a href="https://www.joomla.org/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
+                    data-category="backend">
+                    <img src="https://cdn.simpleicons.org/joomla/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Joomla">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Joomla</span>
+                        <span class="block text-xs text-slate-500">Open-source CMS.</span>
+                    </div>
+                </a>
+
+                <a href="https://www.drupal.org/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
+                    data-category="backend">
+                    <img src="https://cdn.simpleicons.org/drupal/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Drupal">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Drupal</span>
+                        <span class="block text-xs text-slate-500">Enterprise CMS.</span>
+                    </div>
+                </a>
+
+                <a href="https://www.shopify.com/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
+                    data-category="backend">
+                    <img src="https://cdn.simpleicons.org/shopify/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Shopify">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Shopify</span>
+                        <span class="block text-xs text-slate-500">E-commerce platform.</span>
+                    </div>
+                </a>
+
+                <a href="https://ghost.org/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
+                    data-category="backend">
+                    <img src="https://cdn.simpleicons.org/ghost/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Ghost">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Ghost</span>
+                        <span class="block text-xs text-slate-500">Modern publishing platform.</span>
+                    </div>
+                </a>
+
+                <a href="https://www.prisma.io/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
+                    data-category="backend database">
+                    <img src="https://cdn.simpleicons.org/prisma/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Prisma">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Prisma</span>
+                        <span class="block text-xs text-slate-500">Next-gen ORM.</span>
+                    </div>
+                </a>
+
                 <!-- Database -->
-                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                <a href="https://www.mysql.com/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
                     data-category="database">
                     <img src="https://cdn.simpleicons.org/mysql/38bdf8" class="w-8 h-8 flex-shrink-0" alt="MySQL">
                     <div>
                         <span class="block font-bold text-slate-200 text-sm mb-0.5">MySQL</span>
                         <span class="block text-xs text-slate-500">Relational classic.</span>
                     </div>
-                </div>
+                </a>
 
                 <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
                     data-category="database">
@@ -891,42 +970,46 @@
                     </div>
                 </div>
 
-                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                <a href="https://firebase.google.com/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
                     data-category="database">
                     <img src="https://cdn.simpleicons.org/firebase/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Firebase">
                     <div>
                         <span class="block font-bold text-slate-200 text-sm mb-0.5">Firebase</span>
                         <span class="block text-xs text-slate-500">Google's BaaS.</span>
                     </div>
-                </div>
+                </a>
 
-                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                <a href="https://redis.io/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
                     data-category="database">
                     <img src="https://cdn.simpleicons.org/redis/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Redis">
                     <div>
                         <span class="block font-bold text-slate-200 text-sm mb-0.5">Redis</span>
                         <span class="block text-xs text-slate-500">In-memory cache.</span>
                     </div>
-                </div>
+                </a>
 
-                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                <a href="https://www.mongodb.com/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
                     data-category="database">
                     <img src="https://cdn.simpleicons.org/mongodb/38bdf8" class="w-8 h-8 flex-shrink-0" alt="MongoDB">
                     <div>
                         <span class="block font-bold text-slate-200 text-sm mb-0.5">MongoDB</span>
                         <span class="block text-xs text-slate-500">NoSQL document DB.</span>
                     </div>
-                </div>
+                </a>
 
                 <!-- DevOps & Infrastructure -->
-                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                <a href="https://www.docker.com/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
                     data-category="devops">
                     <img src="https://cdn.simpleicons.org/docker/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Docker">
                     <div>
                         <span class="block font-bold text-slate-200 text-sm mb-0.5">Docker</span>
                         <span class="block text-xs text-slate-500">"It works on my machine" - The Service.</span>
                     </div>
-                </div>
+                </a>
 
                 <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
                     data-category="devops">
@@ -984,6 +1067,36 @@
                     <div>
                         <span class="block font-bold text-slate-200 text-sm mb-0.5">Jekyll</span>
                         <span class="block text-xs text-slate-500">Static site generator.</span>
+                    </div>
+                </div>
+
+                <a href="https://github.com/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
+                    data-category="devops">
+                    <img src="https://cdn.simpleicons.org/github/38bdf8" class="w-8 h-8 flex-shrink-0" alt="GitHub">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">GitHub</span>
+                        <span class="block text-xs text-slate-500">Git hosting & CI/CD.</span>
+                    </div>
+                </a>
+
+                <a href="https://about.gitea.com/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
+                    data-category="devops">
+                    <img src="https://cdn.simpleicons.org/gitea/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Gitea">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Gitea</span>
+                        <span class="block text-xs text-slate-500">Self-hosted Git.</span>
+                    </div>
+                </a>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="devops">
+                    <img src="https://cdn.simpleicons.org/bitbucket/38bdf8" class="w-8 h-8 flex-shrink-0"
+                        alt="Bitbucket">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Bitbucket</span>
+                        <span class="block text-xs text-slate-500">Atlassian Git hosting.</span>
                     </div>
                 </div>
 
@@ -1130,6 +1243,46 @@
                     <div>
                         <span class="block font-bold text-slate-200 text-sm mb-0.5">Swagger</span>
                         <span class="block text-xs text-slate-500">API documentation.</span>
+                    </div>
+                </div>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="languages design">
+                    <img src="https://cdn.simpleicons.org/markdown/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Markdown">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Markdown</span>
+                        <span class="block text-xs text-slate-500">Lightweight markup.</span>
+                    </div>
+                </div>
+
+                <!-- Project Management -->
+                <a href="https://www.atlassian.com/software/jira" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
+                    data-category="projectmgmt">
+                    <img src="https://cdn.simpleicons.org/jira/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Jira">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Jira</span>
+                        <span class="block text-xs text-slate-500">Agile project tracking.</span>
+                    </div>
+                </a>
+
+                <a href="https://trello.com/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
+                    data-category="projectmgmt">
+                    <img src="https://cdn.simpleicons.org/trello/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Trello">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Trello</span>
+                        <span class="block text-xs text-slate-500">Kanban boards.</span>
+                    </div>
+                </a>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="projectmgmt">
+                    <div class="w-8 h-8 flex items-center justify-center text-accent text-xl"><i
+                            class="fas fa-tasks"></i></div>
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">MS Project</span>
+                        <span class="block text-xs text-slate-500">Enterprise PM tool.</span>
                     </div>
                 </div>
 
