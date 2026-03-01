@@ -44,8 +44,9 @@ I don't just stack bricks; I design buildings. Here is the toolkit I use to solv
 | Domain | Technologies |
 | :--- | :--- |
 | **🚢 Maritime IoT** | `Starlink Enterprise` `ESP32` `NMEA 0183/2000` `AIS` `GPS Telemetry` `Solar Arrays` |
-| **💻 Backend & ERP** | `PHP (CodeIgniter 4)` `Python` `PostgreSQL` `MySQL` `Redis` `Docker` |
-| **🌐 Frontend** | `React` `Next.js` `Tailwind CSS` `LeafletJS` |
+| **💻 Backend & ERP** | `PHP (CodeIgniter 4)` `Python` `PostgreSQL` `MySQL` `Redis` `Docker` `SurealDB` |
+| **🌐 Frontend** | `React` `Next.js` `Tailwind CSS` `TypeScript` `LeafletJS` |
+| **🖥️ Desktop Apps** | `Tauri` `Rust` |
 | **🛡️ Ops & Security** | `OCI (Oracle Cloud)` `AWS` `Linux Admin` `Data Privacy (DPO)` |
 
 <br>
