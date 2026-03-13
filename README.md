@@ -58,7 +58,7 @@ I don't just stack bricks; I design buildings. Here is the toolkit I use to solv
   
   <br><br>
 
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=tildemark&theme=dark&hide_border=true&background=0d1117&ring=fbbf24&currStreakLabel=38bdf8" height="150" alt="streak graph" />
+  <img src="http://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=tildemark&theme=github_dark" alt="most used languages" />
   
   <br>
 
