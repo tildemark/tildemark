@@ -63,6 +63,9 @@ I don't just stack bricks; I design buildings. Here is the toolkit I use to solv
   <br>
 
   <img src="http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=tildemark&theme=github_dark&utcOffset=8" alt="productive time" />
+
+  <br />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=tildemark&theme=github-dark&hide_border=true&area=true" alt="activity graph" />
 </div>
 
 <br>
