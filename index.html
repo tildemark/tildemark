@@ -762,6 +762,9 @@
                 <button onclick="filterSection('toolbox', 'projectmgmt')"
                     class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all"
                     data-filter="projectmgmt">Project Mgmt</button>
+                <button onclick="filterSection('toolbox', 'ai')"
+                    class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all"
+                    data-filter="ai">AI & Agents</button>
                 <button onclick="filterSection('toolbox', 'tools')"
                     class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all"
                     data-filter="tools">Tools</button>
@@ -1597,7 +1600,7 @@
 
                 <a href="https://cursor.com/" target="_blank"
                     class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
-                    data-category="tools">
+                    data-category="tools ai">
                     <div class="w-8 h-8 flex items-center justify-center text-accent text-xl"><i
                             class="fas fa-terminal"></i></div>
                     <div>
@@ -1624,6 +1627,101 @@
                     <div>
                         <span class="block font-bold text-slate-200 text-sm mb-0.5">MinIO</span>
                         <span class="block text-xs text-slate-500">High-performance object storage.</span>
+                    </div>
+                </a>
+
+                <!-- AI & Agents -->
+                <div class="tool-item sm:col-span-2 px-1 pt-2" data-category="ai">
+                    <span class="text-[10px] font-bold uppercase tracking-wider text-accent">AI & Large Language Models</span>
+                </div>
+
+                <a href="https://claude.ai/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
+                    data-category="ai">
+                    <img src="https://cdn.simpleicons.org/claude/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Claude">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Claude</span>
+                        <span class="block text-xs text-slate-500">Anthropic's conversational and coding model.</span>
+                    </div>
+                </a>
+
+                <a href="https://gemini.google.com/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
+                    data-category="ai">
+                    <img src="https://cdn.simpleicons.org/googlegemini/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Gemini">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Gemini</span>
+                        <span class="block text-xs text-slate-500">Google's multimodal coding companion.</span>
+                    </div>
+                </a>
+
+                <a href="https://ai.google.dev/gemma" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
+                    data-category="ai">
+                    <div class="w-8 h-8 flex items-center justify-center text-accent text-xl"><i class="fas fa-brain"></i></div>
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Gemma</span>
+                        <span class="block text-xs text-slate-500">Google's lightweight, open model family.</span>
+                    </div>
+                </a>
+
+                <a href="https://www.kilocode.com/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
+                    data-category="ai">
+                    <div class="w-8 h-8 flex items-center justify-center text-accent text-xl"><i class="fas fa-keyboard"></i></div>
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Kilo Code</span>
+                        <span class="block text-xs text-slate-500">Developer assistant and autocomplete.</span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/roocodetool/roocode" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
+                    data-category="ai">
+                    <div class="w-8 h-8 flex items-center justify-center text-accent text-xl"><i class="fas fa-robot"></i></div>
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Roo Code</span>
+                        <span class="block text-xs text-slate-500">Autonomous, agentic coding assistant for VS Code.</span>
+                    </div>
+                </a>
+
+                <a href="https://www.qodo.ai/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
+                    data-category="ai">
+                    <div class="w-8 h-8 flex items-center justify-center text-accent text-xl"><i class="fas fa-check-double"></i></div>
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Qodo</span>
+                        <span class="block text-xs text-slate-500">AI-driven testing, review, and code integrity.</span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/features/copilot" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
+                    data-category="ai">
+                    <img src="https://cdn.simpleicons.org/githubcopilot/38bdf8" class="w-8 h-8 flex-shrink-0" alt="GitHub Copilot">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">GitHub Copilot</span>
+                        <span class="block text-xs text-slate-500">The classic AI-powered code pair programmer.</span>
+                    </div>
+                </a>
+
+                <a href="https://chatgpt.com/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
+                    data-category="ai">
+                    <img src="https://cdn.simpleicons.org/openai/38bdf8" class="w-8 h-8 flex-shrink-0" alt="ChatGPT">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">ChatGPT</span>
+                        <span class="block text-xs text-slate-500">OpenAI's general-purpose assistant & models.</span>
+                    </div>
+                </a>
+
+                <a href="https://ollama.com/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
+                    data-category="ai tools">
+                    <img src="https://cdn.simpleicons.org/ollama/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Ollama">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Ollama</span>
+                        <span class="block text-xs text-slate-500">Run open-source LLMs locally on your hardware.</span>
                     </div>
                 </a>
 
