@@ -4,6 +4,8 @@
 
 **Project Title:** Supply, Delivery, Installation, and Commissioning of an IP-Based CCTV Surveillance System
 
+**Client:** ONE LIFE
+
 **System Architecture:** High-Definition IP Surveillance (16 Active Video Channels)
 
 **Hardware Ecosystem:** DAHUA Network Solutions
@@ -30,16 +32,23 @@
 
 ## II. STRUCTURED CABLING & CONDUIT CONTAINMENT (30% Markup Applied)
 
-*Upgraded to a CAT6 framework. Containment pathways utilize swept, heat-bent configurations for zero cable drag.*
+*Itemized pipeline infrastructure based on the 23.11m x 11.32m architectural footprint. Pathways utilize swept, heat-bent configurations to ensure clean, low-friction CAT6 wire pulls.*
 
 | Description | Estimated Qty | Unit | Unit Price (PHP)*(With 30% Markup)* | Total Price (PHP) |
 | --- | --- | --- | --- | --- |
 | **CAT6 UTP Data Cable** (305m / Box) | 2 | boxes | ₱11,700.00 | ₱23,400.00 |
-| **PVC Conduits, Moldings, & Structural Routing Materials** | 1 | lot | ₱13,000.00 | ₱13,000.00 |
+| **1/2" (20mm) Thick-Walled PVC Conduit Pipes**• Standard 3-meter length (10 ft) | 55 | pcs | ₱115.00 | ₱6,325.00 |
+| **1/2" PVC Flexible Corrugated Conduit Hose**• For neat, adjustable ceiling-to-camera protection runs | 1 | roll | ₱1,150.00 | ₱1,150.00 |
+| **Decorative PVC Wall Moldings (1-inch)**• For clean surface cable management in exposed office areas | 15 | pcs | ₱160.00 | ₱2,400.00 |
 | **PVC Deep Junction Boxes** (Heavy-duty camera weather bases) | 16 | pcs | ₱260.00 | ₱4,160.00 |
+| **1/2" PVC Male Adapters & Locknuts**• Secures conduit lines firmly into junctions | 32 | pcs | ₱15.00 | ₱480.00 |
+| **PVC Pipe Solvent Cement (Glue)** (400cc can) | 2 | cans | ₱260.00 | ₱520.00 |
+| **Metal Conduit Pipe Clamps & Heavy Screws/Tox** | 2 | packs | ₱450.00 | ₱900.00 |
 | **Pass-Through RJ45 Connectors** (High-grade CAT6) | 50 | pcs | ₱15.60 | ₱780.00 |
 | **Strain Relief RJ45 Rubber Boots** | 50 | pcs | ₱15.60 | ₱780.00 |
-| **SUBTOTAL — CABLING & CONTAINMENT** |  |  |  | **₱42,120.00** |
+| **Heavy-Duty Plastic Cable Ties (Zip Ties)** (8-inch length) | 3 | packs | ₱170.00 | ₱510.00 |
+| **1/2" PVC Elbows (90-Degree)**• Only used for tight structural corners where sweeping bends cannot fit | 10 | pcs | ₱20.00 | ₱200.00 |
+| **SUBTOTAL — CABLING & CONTAINMENT** |  |  |  | **₱42,605.00** |
 
 ---
 
@@ -49,13 +58,12 @@
 
 | Description | Qty | Unit | Unit Price (PHP) | Total Price (PHP) |
 | --- | --- | --- | --- | --- |
-| **Mobilization, Tooling, & Professional Labor Fees** <br>
-*(Billed at a flat rate per physical endpoint node)* | 16 | Nodes | ₱2,406.85 | ₱38,509.60 |
-| **SUBTOTAL — TECHNICAL SERVICES & LABOR** |  |  |  | **₱38,509.60** |
+| **Mobilization, Tooling, Installation, Programming & Professional Labor Fees** *(Billed at a flat rate per physical endpoint node)* | 16 | Nodes | ₱10,875.00 | ₱174,000.00 |
+| **SUBTOTAL — TECHNICAL SERVICES & LABOR** |  |  |  | **₱174,000.00** |
 
 ---
 
-### TOTAL CONTRACT PRICE: **₱277,449.60**
+### TOTAL CONTRACT PRICE: **₱413,425.00**
 
 ---
 
