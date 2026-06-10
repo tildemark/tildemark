@@ -577,6 +577,75 @@
                     data-category="tools web">
                     <div class="flex justify-between items-start mb-2">
                         <div class="flex flex-col">
+                            <h3 class="font-bold text-white text-sm">Vitest</h3>
+                            <span class="text-[10px] text-accent font-mono uppercase tracking-wider mt-0.5">Modern Vite-powered test runner</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <a href="https://vitest.dev/"
+                                class="text-xs px-2 py-1 rounded bg-accent text-maritime hover:bg-white transition-colors font-semibold">Docs</a>
+                            <a href="https://github.com/vitest-dev/vitest"
+                                class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-2">Fast unit and integration testing for modern web apps, built on Vite.</p>
+                    <div class="flex gap-1 flex-wrap">
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-sky-500/20 text-sky-300 border border-sky-500/30">TypeScript</span>
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-emerald-500/20 text-emerald-300 border border-emerald-500/30">Testing</span>
+                    </div>
+                </div>
+
+                <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4"
+                    data-category="tools web">
+                    <div class="flex justify-between items-start mb-2">
+                        <div class="flex flex-col">
+                            <h3 class="font-bold text-white text-sm">Playwright</h3>
+                            <span class="text-[10px] text-accent font-mono uppercase tracking-wider mt-0.5">Cross-browser E2E automation</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <a href="https://playwright.dev/"
+                                class="text-xs px-2 py-1 rounded bg-accent text-maritime hover:bg-white transition-colors font-semibold">Docs</a>
+                            <a href="https://github.com/microsoft/playwright"
+                                class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-2">Automated browser testing across Chromium, Firefox, and WebKit with unified APIs.</p>
+                    <div class="flex gap-1 flex-wrap">
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-indigo-500/20 text-indigo-300 border border-indigo-500/30">E2E</span>
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-sky-500/20 text-sky-300 border border-sky-500/30">Web</span>
+                    </div>
+                </div>
+
+                <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4"
+                    data-category="tools web">
+                    <div class="flex justify-between items-start mb-2">
+                        <div class="flex flex-col">
+                            <h3 class="font-bold text-white text-sm">Cypress</h3>
+                            <span class="text-[10px] text-accent font-mono uppercase tracking-wider mt-0.5">Developer-friendly browser testing</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <a href="https://www.cypress.io/"
+                                class="text-xs px-2 py-1 rounded bg-accent text-maritime hover:bg-white transition-colors font-semibold">Docs</a>
+                            <a href="https://github.com/cypress-io/cypress"
+                                class="text-xs px-2 py-1 rounded bg-slate-700 hover:bg-white hover:text-maritime transition-colors font-semibold">Code</a>
+                        </div>
+                    </div>
+                    <p class="text-xs text-slate-400 leading-relaxed mb-2">Reliable browser testing with time-travel debugging and interactive test runs.</p>
+                    <div class="flex gap-1 flex-wrap">
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/30">Testing</span>
+                        <span
+                            class="text-[9px] px-2 py-0.5 rounded-full bg-sky-500/20 text-sky-300 border border-sky-500/30">Web</span>
+                    </div>
+                </div>
+
+                <div class="link-card bg-slate-800/30 border border-slate-700 hover:border-accent rounded-xl p-4"
+                    data-category="tools web">
+                    <div class="flex justify-between items-start mb-2">
+                        <div class="flex flex-col">
                             <h3 class="font-bold text-white text-sm">Barangay API</h3>
                         </div>
                         <div class="flex gap-2">
@@ -820,6 +889,9 @@
                 <button onclick="filterSection('toolbox', 'devops')"
                     class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all"
                     data-filter="devops">DevOps</button>
+                <button onclick="filterSection('toolbox', 'testing')"
+                    class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all"
+                    data-filter="testing">Testing</button>
                 <button onclick="filterSection('toolbox', 'hardware')"
                     class="tab-btn px-3 py-1 text-xs font-bold rounded-full border border-slate-700 text-slate-400 hover:text-white hover:border-slate-500 transition-all"
                     data-filter="hardware">Hardware & IoT</button>
@@ -1706,6 +1778,40 @@
                     <div>
                         <span class="block font-bold text-slate-200 text-sm mb-0.5">Vite</span>
                         <span class="block text-xs text-slate-500">Next-gen frontend tooling.</span>
+                    </div>
+                </a>
+
+                <div class="tool-item sm:col-span-2 px-1 pt-2" data-category="testing">
+                    <span class="text-[10px] font-bold uppercase tracking-wider text-accent">Testing & Automation</span>
+                </div>
+
+                <a href="https://vitest.dev/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
+                    data-category="testing tools devops">
+                    <img src="https://cdn.simpleicons.org/vitest/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Vitest">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Vitest</span>
+                        <span class="block text-xs text-slate-500">Fast Vite-native test runner.</span>
+                    </div>
+                </a>
+
+                <a href="https://playwright.dev/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
+                    data-category="testing tools devops">
+                    <img src="https://cdn.simpleicons.org/playwright/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Playwright">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Playwright</span>
+                        <span class="block text-xs text-slate-500">Cross-browser E2E automation.</span>
+                    </div>
+                </a>
+
+                <a href="https://www.cypress.io/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
+                    data-category="testing tools devops">
+                    <img src="https://cdn.simpleicons.org/cypress/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Cypress">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Cypress</span>
+                        <span class="block text-xs text-slate-500">Developer-friendly browser testing.</span>
                     </div>
                 </a>
 
