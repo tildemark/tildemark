@@ -943,11 +943,13 @@
                     data-filter="all">All</button>
             </div>
 
+            <div class="mb-4 text-[11px] text-slate-500">Grouped by stack, data, and delivery so it’s easier to scan.</div>
+
             <div class="grid grid-cols-1 sm:grid-cols-2 gap-3" id="toolbox-grid">
 
                 <!-- Languages -->
                 <div class="tool-item sm:col-span-2 px-1 pt-1" data-category="languages">
-                    <span class="text-[10px] font-bold uppercase tracking-wider text-accent">Systems</span>
+                    <span class="text-[10px] font-bold uppercase tracking-wider text-accent">Core languages</span>
                 </div>
 
                 <a href="https://isocpp.org/" target="_blank"
@@ -1124,7 +1126,7 @@
                 </a>
 
                 <div class="tool-item sm:col-span-2 px-1 pt-2" data-category="languages frontend">
-                    <span class="text-[10px] font-bold uppercase tracking-wider text-accent">Frontend Frameworks</span>
+                    <span class="text-[10px] font-bold uppercase tracking-wider text-accent">UI & app frameworks</span>
                 </div>
 
                 <a href="https://react.dev/" target="_blank"
@@ -1150,10 +1152,30 @@
                 <a href="https://tiptap.dev/" target="_blank"
                     class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
                     data-category="frontend design">
-                    <img src="https://cdn.simpleicons.org/tiptap/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Tiptap">
+                    <div class="w-8 h-8 flex items-center justify-center text-accent text-xl"><i class="fas fa-edit"></i></div>
                     <div>
                         <span class="block font-bold text-slate-200 text-sm mb-0.5">Tiptap</span>
                         <span class="block text-xs text-slate-500">Modern rich-text editor.</span>
+                    </div>
+                </a>
+
+                <a href="https://tanstack.com/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
+                    data-category="frontend">
+                    <div class="w-8 h-8 flex items-center justify-center text-accent text-xl"><i class="fas fa-layer-group"></i></div>
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">TanStack</span>
+                        <span class="block text-xs text-slate-500">Powerful async and data tools.</span>
+                    </div>
+                </a>
+
+                <a href="https://ui.shadcn.com/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
+                    data-category="frontend design">
+                    <div class="w-8 h-8 flex items-center justify-center text-accent text-xl"><i class="fas fa-palette"></i></div>
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">shadcn/ui</span>
+                        <span class="block text-xs text-slate-500">Composable UI primitives.</span>
                     </div>
                 </a>
 
@@ -1198,7 +1220,7 @@
                     </div>
                 </a>
 
-                <!-- Backend -->
+                <!-- Backend & platforms -->
                 <a href="https://codeigniter.com/" target="_blank"
                     class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
                     data-category="backend">
@@ -1240,6 +1262,26 @@
                     <div>
                         <span class="block font-bold text-slate-200 text-sm mb-0.5">BullMQ</span>
                         <span class="block text-xs text-slate-500">Redis-based message queue for Node.js.</span>
+                    </div>
+                </a>
+
+                <a href="https://www.gcash.com/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
+                    data-category="backend">
+                    <div class="w-8 h-8 flex items-center justify-center text-accent text-xl"><i class="fas fa-wallet"></i></div>
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">GCash</span>
+                        <span class="block text-xs text-slate-500">Philippine mobile payments.</span>
+                    </div>
+                </a>
+
+                <a href="https://www.paymongo.com/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
+                    data-category="backend">
+                    <div class="w-8 h-8 flex items-center justify-center text-accent text-xl"><i class="fas fa-credit-card"></i></div>
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">PayMongo</span>
+                        <span class="block text-xs text-slate-500">Online payments for PH startups.</span>
                     </div>
                 </a>
 
@@ -1314,7 +1356,27 @@
                     </div>
                 </a>
 
-                <!-- Database -->
+                <a href="https://zod.dev/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
+                    data-category="backend">
+                    <div class="w-8 h-8 flex items-center justify-center text-accent text-xl"><i class="fas fa-shield-alt"></i></div>
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Zod</span>
+                        <span class="block text-xs text-slate-500">Type-safe schema validation.</span>
+                    </div>
+                </a>
+
+                <a href="https://jwt.io/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
+                    data-category="backend">
+                    <div class="w-8 h-8 flex items-center justify-center text-accent text-xl"><i class="fas fa-key"></i></div>
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">JWT</span>
+                        <span class="block text-xs text-slate-500">Token-based auth.</span>
+                    </div>
+                </a>
+
+                <!-- Data & storage -->
                 <a href="https://www.mysql.com/" target="_blank"
                     class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
                     data-category="database">
@@ -1356,6 +1418,16 @@
                     </div>
                 </a>
 
+                <a href="https://supabase.com/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
+                    data-category="database backend">
+                    <img src="https://cdn.simpleicons.org/supabase/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Supabase">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Supabase</span>
+                        <span class="block text-xs text-slate-500">Open-source Firebase alternative.</span>
+                    </div>
+                </a>
+
                 <a href="https://firebase.google.com/" target="_blank"
                     class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
                     data-category="database">
@@ -1363,6 +1435,26 @@
                     <div>
                         <span class="block font-bold text-slate-200 text-sm mb-0.5">Firebase</span>
                         <span class="block text-xs text-slate-500">Google's BaaS.</span>
+                    </div>
+                </a>
+
+                <a href="https://valkey.io/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
+                    data-category="database">
+                    <div class="w-8 h-8 flex items-center justify-center text-accent text-xl"><i class="fas fa-database"></i></div>
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Valkey</span>
+                        <span class="block text-xs text-slate-500">High-performance key-value store.</span>
+                    </div>
+                </a>
+
+                <a href="https://github.com/seaweedfs/seaweedfs" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
+                    data-category="database backend">
+                    <div class="w-8 h-8 flex items-center justify-center text-accent text-xl"><i class="fas fa-folder-open"></i></div>
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">SeaweedFS</span>
+                        <span class="block text-xs text-slate-500">Distributed object storage.</span>
                     </div>
                 </a>
 
@@ -1406,11 +1498,20 @@
                     </div>
                 </a>
 
-                <!-- DevOps & Infrastructure -->
+                <!-- Cloud & delivery -->
                 <div class="tool-item sm:col-span-2 px-1 pt-2" data-category="devops">
-                    <span class="text-[10px] font-bold uppercase tracking-wider text-accent">Containers & PaaS</span>
+                    <span class="text-[10px] font-bold uppercase tracking-wider text-accent">Containers & delivery</span>
                 </div>
 
+                <a href="https://kubernetes.io/" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
+                    data-category="devops">
+                    <img src="https://cdn.simpleicons.org/kubernetes/38bdf8" class="w-8 h-8 flex-shrink-0" alt="Kubernetes">
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Kubernetes</span>
+                        <span class="block text-xs text-slate-500">Container orchestration.</span>
+                    </div>
+                </a>
                 <a href="https://www.docker.com/" target="_blank"
                     class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
                     data-category="devops">
@@ -1453,8 +1554,18 @@
                     </div>
                 </a>
 
+                <a href="https://developer.mozilla.org/en-US/docs/Web/API/Crypto" target="_blank"
+                    class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
+                    data-category="backend frontend">
+                    <div class="w-8 h-8 flex items-center justify-center text-accent text-xl"><i class="fas fa-lock"></i></div>
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Crypto</span>
+                        <span class="block text-xs text-slate-500">Web crypto primitives.</span>
+                    </div>
+                </a>
+
                 <div class="tool-item sm:col-span-2 px-1 pt-2" data-category="devops">
-                    <span class="text-[10px] font-bold uppercase tracking-wider text-accent">Cloud Providers & Hosting</span>
+                    <span class="text-[10px] font-bold uppercase tracking-wider text-accent">Cloud providers & hosting</span>
                 </div>
 
                 <a href="https://aws.amazon.com/" target="_blank"
@@ -1805,6 +1916,10 @@
                     </div>
                 </a>
 
+                <div class="tool-item sm:col-span-2 px-1 pt-4" data-category="tools">
+                    <span class="text-[10px] font-bold uppercase tracking-wider text-accent">Utilities & workflow</span>
+                </div>
+
                 <!-- Tools -->
                 <div class="tool-item sm:col-span-2 px-1 pt-2" data-category="tools">
                     <span class="text-[10px] font-bold uppercase tracking-wider text-accent">Development & Editors</span>
@@ -1820,6 +1935,16 @@
                         <span class="block text-xs text-slate-500">Still trying to figure out how to exit Vim.</span>
                     </div>
                 </a>
+
+                <div class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 flex items-start gap-3"
+                    data-category="tools">
+                    <div class="w-8 h-8 flex items-center justify-center text-accent text-xl"><i
+                            class="fas fa-meteor"></i></div>
+                    <div>
+                        <span class="block font-bold text-slate-200 text-sm mb-0.5">Antigravity IDE</span>
+                        <span class="block text-xs text-slate-500">A playful, experimental coding environment.</span>
+                    </div>
+                </div>
 
                 <a href="https://cursor.com/" target="_blank"
                     class="tool-item block bg-slate-800/30 p-3 rounded-lg border border-slate-700/50 hover:bg-slate-800 hover:border-slate-500 transition-all flex items-start gap-3"
