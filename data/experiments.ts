@@ -1,0 +1,415 @@
+export interface Experiment {
+  id: string;
+  title: string;
+  subtitle?: string;
+  description: string;
+  categories: string[];
+  status?: 'released' | 'wip';
+  demoUrl?: string;
+  codeUrl?: string;
+  downloadUrl?: string;
+  docsUrl?: string;
+  tags: {
+    name: string;
+    color?: string;
+  }[];
+}
+
+export const experimentCategories = [
+  { id: 'privacy', label: 'Privacy' },
+  { id: 'business', label: 'Business' },
+  { id: 'ai', label: 'AI' },
+  { id: 'web', label: 'Web' },
+  { id: 'windows', label: 'Windows' },
+  { id: 'android', label: 'Android' },
+  { id: 'hardware', label: 'Hardware' },
+  { id: 'games', label: 'Games' },
+  { id: 'tools', label: 'Tools' },
+  { id: 'all', label: 'All' },
+] as const;
+
+export const experimentsData: Experiment[] = [
+  {
+    id: "dpa-mastery",
+    title: "DPA Mastery",
+    subtitle: "Philippine NPC Data Privacy Act Reviewer & Spaced Repetition System",
+    description: "Offline-first review app for the Philippine NPC Data Privacy Competency Exam featuring an 8-stage spaced repetition system (SRS) and difficulty gating engine.",
+    categories: ["privacy", "android", "windows", "tools"],
+    status: "released",
+    demoUrl: "https://dpa-mastery.sanchez.ph/",
+    codeUrl: "https://github.com/tildemark/dpa-mastery",
+    downloadUrl: "https://github.com/tildemark/dpa-mastery/releases",
+    tags: [
+      { name: "Flutter" },
+      { name: "Dart" },
+      { name: "Drift (SQLite)" },
+      { name: "Riverpod" },
+    ],
+  },
+  {
+    id: "ccard-studio",
+    title: "CCard Studio",
+    subtitle: "Photoshop-Style Calling Card Designer & Print Engine",
+    description: "Photoshop-style desktop and web application for designing, managing, and batch-printing employee calling cards with HRIS integration and precision A4 layout engine.",
+    categories: ["tools", "windows", "web", "business"],
+    status: "released",
+    demoUrl: "https://ccard.sanchez.ph/",
+    codeUrl: "https://github.com/tildemark/ccard-studio",
+    downloadUrl: "https://github.com/tildemark/ccard-studio/releases",
+    tags: [
+      { name: "Tauri" },
+      { name: "Next.js" },
+      { name: "Rust" },
+      { name: "TypeScript" },
+      { name: "Fabric.js" },
+    ],
+  },
+  {
+    id: "vault-drop-explorer",
+    title: "Vault Drop Explorer",
+    subtitle: "AWS S3 & OCI Object Storage Desktop Client",
+    description: "A lightweight Tauri v2 desktop application for securely managing files on AWS S3 and Oracle Cloud Infrastructure (OCI) Object Storage.",
+    categories: ["tools", "windows", "web"],
+    status: "released",
+    demoUrl: "https://vaultdrop.sanchez.ph/",
+    codeUrl: "https://github.com/tildemark/vault-drop-explorer",
+    downloadUrl: "https://github.com/tildemark/vault-drop-explorer/releases",
+    tags: [
+      { name: "Tauri" },
+      { name: "Rust" },
+      { name: "React" },
+      { name: "TypeScript" },
+      { name: "Tailwind CSS" },
+    ],
+  },
+  {
+    id: "trace",
+    title: "T.R.A.C.E.",
+    subtitle: "Total Resource Asset & Compliance Engine",
+    description: "Enterprise-grade on-premises asset management ecosystem designed for high-luxury, multi-acre resorts.",
+    categories: ["business", "web", "tools", "android"],
+    status: "released",
+    demoUrl: "https://trace.sanchez.ph",
+    downloadUrl: "https://trace.sanchez.ph",
+    tags: [
+      { name: "Flutter" },
+      { name: "Next.js" },
+      { name: "PostgreSQL" },
+      { name: "SQLite" },
+    ],
+  },
+  {
+    id: "alimango",
+    title: "Alimango",
+    subtitle: "WaniKani Android Client",
+    description: "Modern, high-performance, offline-first Android client for WaniKani API v2.",
+    categories: ["tools", "android"],
+    status: "released",
+    codeUrl: "https://github.com/tildemark/alimango",
+    downloadUrl: "https://github.com/tildemark/alimango/releases",
+    tags: [
+      { name: "Kotlin" },
+      { name: "Jetpack Compose" },
+      { name: "Room (SQLite)" },
+    ],
+  },
+  {
+    id: "solarcalc",
+    title: "SolarCalc",
+    description: "Solar system sizing calculator with shareable and exportable build outputs.",
+    categories: ["tools", "web"],
+    demoUrl: "https://solarcalc.sanchez.ph/",
+    codeUrl: "https://github.com/tildemark/solarcalc",
+    tags: [
+      { name: "TypeScript" },
+      { name: "Next.js" },
+    ],
+  },
+  {
+    id: "sight",
+    title: "Sight",
+    description: "CCTV management dashboard with monitoring tools for fast incident visibility.",
+    categories: ["tools", "windows", "web"],
+    demoUrl: "https://sight.sanchez.ph/",
+    codeUrl: "https://github.com/tildemark/sight",
+    downloadUrl: "https://github.com/tildemark/sight/releases",
+    tags: [
+      { name: "TypeScript" },
+      { name: "JavaScript" },
+    ],
+  },
+  {
+    id: "abcde",
+    title: "ABCDE",
+    subtitle: "All Business Centralized Data ERP System",
+    description: "A complete ERP system. The alphabet of enterprise resource planning.",
+    categories: ["business", "web"],
+    codeUrl: "https://github.com/tildemark/ABCDE",
+    tags: [
+      { name: "PHP" },
+      { name: "JavaScript" },
+    ],
+  },
+  {
+    id: "tala",
+    title: "Tala",
+    subtitle: "Tax And Ledger Assistant",
+    description: "BIR compliant accounting system. Making taxes less taxing.",
+    categories: ["business", "web"],
+    codeUrl: "https://github.com/tildemark/tala",
+    tags: [
+      { name: "PHP" },
+      { name: "JavaScript" },
+    ],
+  },
+  {
+    id: "equiyield",
+    title: "EquiYield",
+    description: "Cooperative savings and loan management.",
+    categories: ["business", "web"],
+    demoUrl: "https://equiyield.sanchez.ph/",
+    codeUrl: "https://github.com/tildemark/EquiYield",
+    tags: [
+      { name: "JavaScript" },
+      { name: "HTML" },
+    ],
+  },
+  {
+    id: "apex-smile",
+    title: "Apex Smile",
+    description: "Dentist appointment and booking system. Open wide for open source.",
+    categories: ["business", "web"],
+    codeUrl: "https://github.com/tildemark/apex-smile",
+    tags: [
+      { name: "PHP" },
+      { name: "JavaScript" },
+    ],
+  },
+  {
+    id: "tire-inventory",
+    title: "Tire Inventory",
+    description: "Tracking rubber meeting the road. Inventory logic.",
+    categories: ["business", "web"],
+    codeUrl: "https://github.com/tildemark/tire-inventory",
+    tags: [
+      { name: "PHP" },
+      { name: "JavaScript" },
+    ],
+  },
+  {
+    id: "event-feedback",
+    title: "Event Feedback",
+    description: "End of events feedback collection. Data-driven improvement.",
+    categories: ["business", "web"],
+    codeUrl: "https://github.com/tildemark/event-feedback",
+    tags: [
+      { name: "PHP" },
+      { name: "MySQL" },
+    ],
+  },
+  {
+    id: "siga",
+    title: "Siga",
+    subtitle: "Synchronized Interface for Gadget Automation",
+    description: "IoT smart plug control. Let there be light (remotely).",
+    categories: ["hardware", "web"],
+    codeUrl: "https://github.com/tildemark/siga",
+    tags: [
+      { name: "Python" },
+      { name: "C++" },
+    ],
+  },
+  {
+    id: "pulse",
+    title: "Pulse",
+    subtitle: "Page Usage & Live Statistics Engine",
+    description: "Server monitor and visitor counter. Keeping a finger on the heartbeat.",
+    categories: ["hardware", "web"],
+    codeUrl: "https://github.com/tildemark/pulse",
+    tags: [
+      { name: "Python" },
+      { name: "JavaScript" },
+    ],
+  },
+  {
+    id: "beacon",
+    title: "Beacon",
+    subtitle: "Biometric Employee Attendance Connecting Oceans & Networks",
+    description: "Basic Employee Attendance Connecting Oceans & Networks.",
+    categories: ["hardware", "web"],
+    codeUrl: "https://github.com/tildemark/beacon",
+    tags: [
+      { name: "Python" },
+      { name: "TypeScript" },
+    ],
+  },
+  {
+    id: "super-mine-dive",
+    title: "Super Mine Dive",
+    description: "Infinite Minesweeper game. Dig deep, don't explode.",
+    categories: ["games", "web", "android"],
+    codeUrl: "https://github.com/tildemark/Super-Mine-Dive",
+    tags: [
+      { name: "JavaScript" },
+      { name: "HTML" },
+    ],
+  },
+  {
+    id: "streetcred",
+    title: "StreetCred",
+    description: "Community ranking system. Elo ratings for office warfare.",
+    categories: ["games", "web"],
+    codeUrl: "https://github.com/tildemark/StreetCred",
+    tags: [
+      { name: "JavaScript" },
+      { name: "HTML" },
+    ],
+  },
+  {
+    id: "word-solver",
+    title: "Word Solver",
+    description: "Wordle and puzzle solver. Algorithmic optimization for word games.",
+    categories: ["games", "web", "tools"],
+    demoUrl: "https://solver.sanchez.ph/",
+    codeUrl: "https://github.com/tildemark/word-solver",
+    tags: [
+      { name: "JavaScript" },
+      { name: "HTML" },
+    ],
+  },
+  {
+    id: "vitest",
+    title: "Vitest",
+    subtitle: "Modern Vite-powered test runner",
+    description: "Fast unit and integration testing for modern web apps, built on Vite.",
+    categories: ["tools", "web"],
+    docsUrl: "https://vitest.dev/",
+    codeUrl: "https://github.com/vitest-dev/vitest",
+    tags: [
+      { name: "TypeScript" },
+      { name: "Testing" },
+    ],
+  },
+  {
+    id: "playwright",
+    title: "Playwright",
+    subtitle: "Cross-browser E2E automation",
+    description: "Automated browser testing across Chromium, Firefox, and WebKit with unified APIs.",
+    categories: ["tools", "web"],
+    docsUrl: "https://playwright.dev/",
+    codeUrl: "https://github.com/microsoft/playwright",
+    tags: [
+      { name: "E2E" },
+      { name: "Web" },
+    ],
+  },
+  {
+    id: "cypress",
+    title: "Cypress",
+    subtitle: "Developer-friendly browser testing",
+    description: "Reliable browser testing with time-travel debugging and interactive test runs.",
+    categories: ["tools", "web"],
+    docsUrl: "https://www.cypress.io/",
+    codeUrl: "https://github.com/cypress-io/cypress",
+    tags: [
+      { name: "Testing" },
+      { name: "Web" },
+    ],
+  },
+  {
+    id: "barangay-api",
+    title: "Barangay API",
+    description: "PH Geographic generator. Scraping generic tables is boring.",
+    categories: ["tools", "web"],
+    demoUrl: "https://barangays.sanchez.ph/",
+    codeUrl: "https://github.com/tildemark/ph-geographic-database-generator-to-sql-json-csv",
+    tags: [
+      { name: "PHP" },
+      { name: "JavaScript" },
+    ],
+  },
+  {
+    id: "qryptshare",
+    title: "QRyptshare",
+    description: "QR Code generator + Encryption. Sharing secrets in plain sight.",
+    categories: ["tools", "web", "privacy", "android"],
+    demoUrl: "https://qryptshare.sanchez.ph/",
+    codeUrl: "https://github.com/tildemark/QRyptshare",
+    tags: [
+      { name: "JavaScript" },
+      { name: "HTML" },
+    ],
+  },
+  {
+    id: "anime-subber",
+    title: "Anime Subber",
+    description: "Japanese video subtitle generator. AI-powered pipeline.",
+    categories: ["tools", "windows"],
+    status: "released",
+    codeUrl: "https://github.com/tildemark/anime-subber",
+    tags: [
+      { name: "Python" },
+    ],
+  },
+  {
+    id: "parallax-md",
+    title: "Parallax MD",
+    description: "Markdown editor for Windows. Clean writing with live preview.",
+    categories: ["tools", "windows", "web"],
+    demoUrl: "https://parallaxmd.sanchez.ph/",
+    codeUrl: "https://github.com/tildemark/ParallaxMD",
+    tags: [
+      { name: "JavaScript" },
+      { name: "HTML" },
+    ],
+  },
+  {
+    id: "kanamask",
+    title: "Kanamask",
+    description: "Username generator using Kana obfuscation. Privacy via Katakana.",
+    categories: ["tools", "web", "privacy"],
+    demoUrl: "https://kana.sanchez.ph/",
+    codeUrl: "https://github.com/tildemark/kanamask",
+    tags: [
+      { name: "JavaScript" },
+      { name: "HTML" },
+    ],
+  },
+  {
+    id: "blueprints-ai",
+    title: "Blueprints.ai",
+    description: "Centralized repository for standardized AI prompts, software skeletons, and automation scripts.",
+    categories: ["tools", "web", "ai"],
+    demoUrl: "https://blueprint.sanchez.ph/",
+    codeUrl: "https://github.com/tildemark/blueprints.ai",
+    tags: [
+      { name: "TypeScript" },
+      { name: "JavaScript" },
+    ],
+  },
+  {
+    id: "tanod",
+    title: "TANOD",
+    subtitle: "Technical Assistance for NPC Operations & Data",
+    description: "Data Protection Officer compliance platform with AI-powered risk assessment.",
+    categories: ["privacy", "web", "business", "ai"],
+    codeUrl: "https://github.com/tildemark/tanod",
+    tags: [
+      { name: "TypeScript" },
+      { name: "JavaScript" },
+    ],
+  },
+  {
+    id: "silip",
+    title: "SILIP",
+    subtitle: "Searchable Interface for Legal Information & Privacy",
+    description: "Searchable Interface for Legal Information & Privacy. Semantic search with AI re-ranking.",
+    categories: ["privacy", "web", "tools", "ai"],
+    demoUrl: "https://silip.sanchez.ph/",
+    codeUrl: "https://github.com/tildemark/silip",
+    tags: [
+      { name: "TypeScript" },
+      { name: "JavaScript" },
+    ],
+  },
+];
